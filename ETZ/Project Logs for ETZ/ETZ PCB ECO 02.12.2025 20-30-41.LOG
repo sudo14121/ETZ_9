@@ -1,0 +1,487 @@
+Added Component: Designator=A1(LM2596)
+Add component (AddParameter): Name = "Contact_1"; Value = "+12,6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "OUT"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=R3(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=S1(THT12)
+Added Component: Designator=S2(THT12)
+Added Component: Designator=S3(THT12)
+Added Component: Designator=VD1(LED0805)
+Added Component: Designator=VD2(LED0805)
+Added Component: Designator=VD3(LED0805)
+Added Component: Designator=X1(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X2(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X3(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X4(CWF-6)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "SDA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "SCL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "DIR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-6M (CWF-6)"; VariantName = "[No Variations]"
+Added Component: Designator=X5(CWF-2)
+Add component (AddParameter): Name = "Contact_1"; Value = "VIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-2M (CWF-2)"; VariantName = "[No Variations]"
+Added Component: Designator=X6(PBD38)
+Add component (AddParameter): Name = "Contact1"; Value = "D32"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact2"; Value = "D33"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact3"; Value = "D34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact4"; Value = "D35"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact5"; Value = "D36"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact6"; Value = "D37"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact7"; Value = "D38"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact8"; Value = "D39"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact9"; Value = "D40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact10"; Value = "D41"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact11"; Value = "D42"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact12"; Value = "D43"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact13"; Value = "D44"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact14"; Value = "D45"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact15"; Value = "D46"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact16"; Value = "D47"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact17"; Value = "D48"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact18"; Value = "D49"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact19"; Value = "D50"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact20"; Value = "D51"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact21"; Value = "D52"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact22"; Value = "D53"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact23"; Value = "A0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact24"; Value = "A1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact25"; Value = "A2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact26"; Value = "A3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact27"; Value = "A4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact28"; Value = "A5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact29"; Value = "A6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact30"; Value = "A7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact31"; Value = "A8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact32"; Value = "A9"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact33"; Value = "A10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact34"; Value = "A11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact35"; Value = "A12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact36"; Value = "A13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact37"; Value = "A14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact38"; Value = "A15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact39"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact40"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact41"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact42"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PBD38"; VariantName = "[No Variations]"
+Added Component: Designator=X7(PBD32)
+Add component (AddParameter): Name = "Contact1"; Value = "RX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact2"; Value = "TX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact3"; Value = "D2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact4"; Value = "D3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact5"; Value = "D4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact6"; Value = "D5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact7"; Value = "D6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact8"; Value = "D7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact9"; Value = "D8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact10"; Value = "D9"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact11"; Value = "D10"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact12"; Value = "D11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact13"; Value = "D12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact14"; Value = "D13"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact15"; Value = "D14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact16"; Value = "D15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact17"; Value = "D16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact18"; Value = "D17"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact19"; Value = "D18"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact20"; Value = "D19"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact21"; Value = "D20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact22"; Value = "D21"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact23"; Value = "D22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact24"; Value = "D23"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact25"; Value = "D24"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact26"; Value = "D25"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact27"; Value = "D26"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact28"; Value = "D27"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact29"; Value = "D28"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact30"; Value = "D29"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact31"; Value = "D30"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact32"; Value = "D31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PBD32"; VariantName = "[No Variations]"
+Added Component: Designator=X8(PLS2.54-2*3)
+Add component (AddParameter): Name = "Contact1"; Value = "VIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact2"; Value = "VIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact4"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact5"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact6"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-2*3"; VariantName = "[No Variations]"
+Added Component: Designator=X9(PLS-2.54-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-3"; VariantName = "[No Variations]"
+Added Component: Designator=X10(PLS-2.54-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-3"; VariantName = "[No Variations]"
+Added Component: Designator=X11(PLS-2.54-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "TX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "RX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-4"; VariantName = "[No Variations]"
+Added Component: Designator=X12(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "NC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "DIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "CLK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "CS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "D/S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "RES"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PBD8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X13(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X14(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X15(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X16(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Component: Designator=X17(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Component: Designator=X18(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VDD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "VMOT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X19(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VDD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "VMOT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X20(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VDD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "VMOT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X21(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "DIR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "STEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "SLEEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "RESET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "MS3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "MS2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "MS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "ENABLE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X22(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "DIR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "STEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "SLEEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "RESET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "MS3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "MS2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "MS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "ENABLE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X23(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "DIR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "STEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "SLEEP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "RESET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "MS3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "MS2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "MS1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "ENABLE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X24(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "D1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "D2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "D3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "A1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "A2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "A3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5? Pin=A1-3
+Added Pin To Net: NetName=+5? Pin=R3-1
+Added Pin To Net: NetName=+5? Pin=X1-2
+Added Pin To Net: NetName=+5? Pin=X2-2
+Added Pin To Net: NetName=+5? Pin=X3-1
+Added Pin To Net: NetName=+5? Pin=X4-1
+Added Pin To Net: NetName=+5? Pin=X8-5
+Added Pin To Net: NetName=+5? Pin=X9-2
+Added Pin To Net: NetName=+5? Pin=X10-2
+Added Pin To Net: NetName=+5? Pin=X11-3
+Added Pin To Net: NetName=+5? Pin=X12-1
+Added Pin To Net: NetName=+5? Pin=X17-1
+Added Pin To Net: NetName=+5? Pin=X17-2
+Added Pin To Net: NetName=+5? Pin=X17-3
+Added Pin To Net: NetName=+5? Pin=X17-4
+Added Pin To Net: NetName=+5? Pin=X17-5
+Added Pin To Net: NetName=+5? Pin=X17-6
+Added Pin To Net: NetName=+5? Pin=X21-5
+Added Pin To Net: NetName=+5? Pin=X21-6
+Added Pin To Net: NetName=+5? Pin=X21-7
+Added Pin To Net: NetName=+5? Pin=X22-5
+Added Pin To Net: NetName=+5? Pin=X22-6
+Added Pin To Net: NetName=+5? Pin=X22-7
+Added Pin To Net: NetName=+5? Pin=X23-5
+Added Pin To Net: NetName=+5? Pin=X23-6
+Added Pin To Net: NetName=+5? Pin=X23-7
+Added Net: Name=+5?
+Added Pin To Net: NetName=A1 Pin=X6-26
+Added Pin To Net: NetName=A1 Pin=X24-4
+Added Net: Name=A1
+Added Pin To Net: NetName=A2 Pin=X6-27
+Added Pin To Net: NetName=A2 Pin=X24-5
+Added Net: Name=A2
+Added Pin To Net: NetName=A3 Pin=X6-28
+Added Pin To Net: NetName=A3 Pin=X24-6
+Added Net: Name=A3
+Added Pin To Net: NetName=ANALOG Pin=X6-23
+Added Pin To Net: NetName=ANALOG Pin=X9-1
+Added Net: Name=ANALOG
+Added Pin To Net: NetName=BUTTON1 Pin=S1-2
+Added Pin To Net: NetName=BUTTON1 Pin=S1-2
+Added Pin To Net: NetName=BUTTON1 Pin=X7-28
+Added Net: Name=BUTTON1
+Added Pin To Net: NetName=BUTTON2 Pin=S2-2
+Added Pin To Net: NetName=BUTTON2 Pin=S2-2
+Added Pin To Net: NetName=BUTTON2 Pin=X7-29
+Added Net: Name=BUTTON2
+Added Pin To Net: NetName=BUTTON3 Pin=S3-2
+Added Pin To Net: NetName=BUTTON3 Pin=S3-2
+Added Pin To Net: NetName=BUTTON3 Pin=X7-30
+Added Net: Name=BUTTON3
+Added Pin To Net: NetName=CLK Pin=X6-21
+Added Pin To Net: NetName=CLK Pin=X12-5
+Added Net: Name=CLK
+Added Pin To Net: NetName=CS Pin=X7-24
+Added Pin To Net: NetName=CS Pin=X12-6
+Added Net: Name=CS
+Added Pin To Net: NetName=D1 Pin=X6-11
+Added Pin To Net: NetName=D1 Pin=X24-1
+Added Net: Name=D1
+Added Pin To Net: NetName=D2 Pin=X6-12
+Added Pin To Net: NetName=D2 Pin=X24-2
+Added Net: Name=D2
+Added Pin To Net: NetName=D3 Pin=X6-13
+Added Pin To Net: NetName=D3 Pin=X24-3
+Added Net: Name=D3
+Added Pin To Net: NetName=DIGITAL Pin=X7-27
+Added Pin To Net: NetName=DIGITAL Pin=X10-1
+Added Net: Name=DIGITAL
+Added Pin To Net: NetName=DIR1 Pin=X6-5
+Added Pin To Net: NetName=DIR1 Pin=X21-1
+Added Net: Name=DIR1
+Added Pin To Net: NetName=DIR2 Pin=X6-7
+Added Pin To Net: NetName=DIR2 Pin=X22-1
+Added Net: Name=DIR2
+Added Pin To Net: NetName=DIR3 Pin=X6-9
+Added Pin To Net: NetName=DIR3 Pin=X23-1
+Added Net: Name=DIR3
+Added Pin To Net: NetName=DIR Pin=X4-4
+Added Pin To Net: NetName=DIR Pin=X7-31
+Added Net: Name=DIR
+Added Pin To Net: NetName=DS Pin=X7-25
+Added Pin To Net: NetName=DS Pin=X12-7
+Added Net: Name=DS
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=GND Pin=A1-4
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S3-1
+Added Pin To Net: NetName=GND Pin=S3-1
+Added Pin To Net: NetName=GND Pin=VD2-1
+Added Pin To Net: NetName=GND Pin=VD3-1
+Added Pin To Net: NetName=GND Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X2-3
+Added Pin To Net: NetName=GND Pin=X3-3
+Added Pin To Net: NetName=GND Pin=X4-5
+Added Pin To Net: NetName=GND Pin=X5-2
+Added Pin To Net: NetName=GND Pin=X8-3
+Added Pin To Net: NetName=GND Pin=X8-4
+Added Pin To Net: NetName=GND Pin=X9-3
+Added Pin To Net: NetName=GND Pin=X10-3
+Added Pin To Net: NetName=GND Pin=X11-4
+Added Pin To Net: NetName=GND Pin=X12-2
+Added Pin To Net: NetName=GND Pin=X16-1
+Added Pin To Net: NetName=GND Pin=X16-2
+Added Pin To Net: NetName=GND Pin=X16-3
+Added Pin To Net: NetName=GND Pin=X16-4
+Added Pin To Net: NetName=GND Pin=X16-5
+Added Pin To Net: NetName=GND Pin=X16-6
+Added Pin To Net: NetName=GND Pin=X18-1
+Added Pin To Net: NetName=GND Pin=X18-7
+Added Pin To Net: NetName=GND Pin=X19-1
+Added Pin To Net: NetName=GND Pin=X19-7
+Added Pin To Net: NetName=GND Pin=X20-1
+Added Pin To Net: NetName=GND Pin=X20-7
+Added Net: Name=GND
+Added Pin To Net: NetName=LED1 Pin=R1-1
+Added Pin To Net: NetName=LED1 Pin=X6-2
+Added Net: Name=LED1
+Added Pin To Net: NetName=LED2 Pin=R2-1
+Added Pin To Net: NetName=LED2 Pin=X6-3
+Added Net: Name=LED2
+Added Pin To Net: NetName=MOSI Pin=X6-20
+Added Pin To Net: NetName=MOSI Pin=X12-4
+Added Net: Name=MOSI
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=VD1-2
+Added Net: Name=NetR1_2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=VD1-1
+Added Pin To Net: NetName=NetR2_2 Pin=VD2-2
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=VD3-2
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=NetX13_1 Pin=X13-1
+Added Pin To Net: NetName=NetX13_1 Pin=X18-3
+Added Net: Name=NetX13_1
+Added Pin To Net: NetName=NetX13_2 Pin=X13-2
+Added Pin To Net: NetName=NetX13_2 Pin=X18-4
+Added Net: Name=NetX13_2
+Added Pin To Net: NetName=NetX13_3 Pin=X13-3
+Added Pin To Net: NetName=NetX13_3 Pin=X18-5
+Added Net: Name=NetX13_3
+Added Pin To Net: NetName=NetX13_4 Pin=X13-4
+Added Pin To Net: NetName=NetX13_4 Pin=X18-6
+Added Net: Name=NetX13_4
+Added Pin To Net: NetName=NetX14_1 Pin=X14-1
+Added Pin To Net: NetName=NetX14_1 Pin=X19-3
+Added Net: Name=NetX14_1
+Added Pin To Net: NetName=NetX14_2 Pin=X14-2
+Added Pin To Net: NetName=NetX14_2 Pin=X19-4
+Added Net: Name=NetX14_2
+Added Pin To Net: NetName=NetX14_3 Pin=X14-3
+Added Pin To Net: NetName=NetX14_3 Pin=X19-5
+Added Net: Name=NetX14_3
+Added Pin To Net: NetName=NetX14_4 Pin=X14-4
+Added Pin To Net: NetName=NetX14_4 Pin=X19-6
+Added Net: Name=NetX14_4
+Added Pin To Net: NetName=NetX15_1 Pin=X15-1
+Added Pin To Net: NetName=NetX15_1 Pin=X20-3
+Added Net: Name=NetX15_1
+Added Pin To Net: NetName=NetX15_2 Pin=X15-2
+Added Pin To Net: NetName=NetX15_2 Pin=X20-4
+Added Net: Name=NetX15_2
+Added Pin To Net: NetName=NetX15_3 Pin=X15-3
+Added Pin To Net: NetName=NetX15_3 Pin=X20-5
+Added Net: Name=NetX15_3
+Added Pin To Net: NetName=NetX15_4 Pin=X15-4
+Added Pin To Net: NetName=NetX15_4 Pin=X20-6
+Added Net: Name=NetX15_4
+Added Pin To Net: NetName=NetX21_3 Pin=X21-3
+Added Pin To Net: NetName=NetX21_3 Pin=X21-4
+Added Net: Name=NetX21_3
+Added Pin To Net: NetName=NetX22_3 Pin=X22-3
+Added Pin To Net: NetName=NetX22_3 Pin=X22-4
+Added Net: Name=NetX22_3
+Added Pin To Net: NetName=NetX23_3 Pin=X23-3
+Added Pin To Net: NetName=NetX23_3 Pin=X23-4
+Added Net: Name=NetX23_3
+Added Pin To Net: NetName=RES Pin=X7-26
+Added Pin To Net: NetName=RES Pin=X12-8
+Added Net: Name=RES
+Added Pin To Net: NetName=RXD3 Pin=X7-16
+Added Pin To Net: NetName=RXD3 Pin=X11-2
+Added Net: Name=RXD3
+Added Pin To Net: NetName=SCL Pin=X4-3
+Added Pin To Net: NetName=SCL Pin=X7-22
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=X4-2
+Added Pin To Net: NetName=SDA Pin=X7-21
+Added Net: Name=SDA
+Added Pin To Net: NetName=SERVO Pin=X3-2
+Added Pin To Net: NetName=SERVO Pin=X7-23
+Added Net: Name=SERVO
+Added Pin To Net: NetName=STEP1 Pin=X6-4
+Added Pin To Net: NetName=STEP1 Pin=X21-2
+Added Net: Name=STEP1
+Added Pin To Net: NetName=STEP2 Pin=X6-6
+Added Pin To Net: NetName=STEP2 Pin=X22-2
+Added Net: Name=STEP2
+Added Pin To Net: NetName=STEP3 Pin=X6-8
+Added Pin To Net: NetName=STEP3 Pin=X23-2
+Added Net: Name=STEP3
+Added Pin To Net: NetName=TCRT1 Pin=X1-1
+Added Pin To Net: NetName=TCRT1 Pin=X6-24
+Added Net: Name=TCRT1
+Added Pin To Net: NetName=TCRT2 Pin=X2-1
+Added Pin To Net: NetName=TCRT2 Pin=X6-25
+Added Net: Name=TCRT2
+Added Pin To Net: NetName=TXD3 Pin=X7-15
+Added Pin To Net: NetName=TXD3 Pin=X11-1
+Added Net: Name=TXD3
+Added Pin To Net: NetName=VCC Pin=A1-1
+Added Pin To Net: NetName=VCC Pin=X5-1
+Added Pin To Net: NetName=VCC Pin=X18-8
+Added Pin To Net: NetName=VCC Pin=X19-8
+Added Pin To Net: NetName=VCC Pin=X20-8
+Added Net: Name=VCC
+Added Class: Name=?3_2
+Added Class: Name=?3
