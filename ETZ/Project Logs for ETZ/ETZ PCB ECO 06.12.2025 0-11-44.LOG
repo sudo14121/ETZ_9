@@ -1,0 +1,326 @@
+Added Component: Designator=A1(LM2596)
+Add component (AddParameter): Name = "Contact_1"; Value = "+12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "OUT"; VariantName = "[No Variations]"
+Added Component: Designator=C1(CAPALUM_10x12.5)
+Add component (AddParameter): Name = "ESR"; Value = "0,3??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "EPCOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "B41858C6157M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "150??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50?"; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAPALUM_10x12.5)
+Add component (AddParameter): Name = "ESR"; Value = "0,3??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "EPCOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "B41858C6157M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "150??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50?"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAPALUM_10x12.5)
+Add component (AddParameter): Name = "ESR"; Value = "0,3??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "EPCOS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "B41858C6157M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "150??"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50?"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "10?"; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "10?"; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=R3(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "????????"; VariantName = "[No Variations]"
+Added Component: Designator=R3(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "10?"; VariantName = "[No Variations]"
+Added Component: Designator=R4(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "10?"; VariantName = "[No Variations]"
+Added Component: Designator=R5(Resistor0805)
+Add component (AddParameter): Name = "nam"; Value = "10?"; VariantName = "[No Variations]"
+Added Component: Designator=S1(THT12)
+Added Component: Designator=S2(THT12)
+Added Component: Designator=S3(THT12)
+Added Component: Designator=VD1(LED0805)
+Added Component: Designator=VD2(LED0805)
+Added Component: Designator=VD3(LED0805)
+Added Component: Designator=X1(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X2(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X3(CWF-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-3M (CWF-3)"; VariantName = "[No Variations]"
+Added Component: Designator=X4(CWF-6)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "SDA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "SCL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "DIR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-6M (CWF-6)"; VariantName = "[No Variations]"
+Added Component: Designator=X5(CWF-2)
+Add component (AddParameter): Name = "Contact_1"; Value = "VIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-2M (CWF-2)"; VariantName = "[No Variations]"
+Added Component: Designator=X6(CWF-2)
+Add component (AddParameter): Name = "Contact_1"; Value = "VIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VIN2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-2M (CWF-2)"; VariantName = "[No Variations]"
+Added Component: Designator=X7(PBD38)
+Add component (AddParameter): Name = "nam"; Value = "Arduino Mega 2560 Pro"; VariantName = "[No Variations]"
+Added Component: Designator=X9(PLS-2.54-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2,54-3"; VariantName = "[No Variations]"
+Added Component: Designator=X10(PLS-2.54-3)
+Add component (AddParameter): Name = "Contact_1"; Value = "S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2,54-3"; VariantName = "[No Variations]"
+Added Component: Designator=X11(PBD8)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "NC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "DIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "CLK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "CS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_7"; Value = "D/S"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_8"; Value = "RES"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PBD8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=X11(PLS-2.54-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "TX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "RX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2,54-4"; VariantName = "[No Variations]"
+Added Component: Designator=X13(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X14(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X15(CWF-4)
+Add component (AddParameter): Name = "Contact_1"; Value = "1B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "2B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "DS1069-4M (CWF-4)"; VariantName = "[No Variations]"
+Added Component: Designator=X16(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "GND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Component: Designator=X17(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "VCC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Component: Designator=X24(pls-2,54-6-tht-v)
+Add component (AddParameter): Name = "Contact_1"; Value = "D1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_2"; Value = "D2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_3"; Value = "D3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_4"; Value = "A1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_5"; Value = "A2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact_6"; Value = "A3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "nam"; Value = "PLS-2.54-6"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=A1-1
+Added Pin To Net: NetName=GND Pin=A1-2
+Added Pin To Net: NetName=+5? Pin=A1-3
+Added Pin To Net: NetName=GND Pin=A1-4
+Added Pin To Net: NetName=VCC Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=VCC Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=VCC Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=LED1 Pin=R1-1
+Added Pin To Net: NetName=SDA Pin=R1-1
+Added Pin To Net: NetName=+5? Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=LED2 Pin=R2-1
+Added Pin To Net: NetName=SCL Pin=R2-1
+Added Pin To Net: NetName=+5? Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=+5? Pin=R3-1
+Added Pin To Net: NetName=BUTTON1 Pin=R3-1
+Added Pin To Net: NetName=+5? Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=BUTTON2 Pin=R4-1
+Added Pin To Net: NetName=+5? Pin=R4-2
+Added Pin To Net: NetName=BUTTON3 Pin=R5-1
+Added Pin To Net: NetName=+5? Pin=R5-2
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=BUTTON1 Pin=S1-2
+Added Pin To Net: NetName=BUTTON1 Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=BUTTON2 Pin=S2-2
+Added Pin To Net: NetName=BUTTON2 Pin=S2-2
+Added Pin To Net: NetName=GND Pin=S3-1
+Added Pin To Net: NetName=GND Pin=S3-1
+Added Pin To Net: NetName=BUTTON3 Pin=S3-2
+Added Pin To Net: NetName=BUTTON3 Pin=S3-2
+Added Pin To Net: NetName=GND Pin=VD1-1
+Added Pin To Net: NetName=NetR1_2 Pin=VD1-2
+Added Pin To Net: NetName=GND Pin=VD2-1
+Added Pin To Net: NetName=NetR2_2 Pin=VD2-2
+Added Pin To Net: NetName=GND Pin=VD3-1
+Added Pin To Net: NetName=NetR3_2 Pin=VD3-2
+Added Pin To Net: NetName=TCRT1 Pin=X1-1
+Added Pin To Net: NetName=+5? Pin=X1-2
+Added Pin To Net: NetName=GND Pin=X1-3
+Added Pin To Net: NetName=TCRT2 Pin=X2-1
+Added Pin To Net: NetName=+5? Pin=X2-2
+Added Pin To Net: NetName=GND Pin=X2-3
+Added Pin To Net: NetName=+5? Pin=X3-1
+Added Pin To Net: NetName=SERVO Pin=X3-2
+Added Pin To Net: NetName=GND Pin=X3-3
+Added Pin To Net: NetName=+5? Pin=X4-1
+Added Pin To Net: NetName=SDA Pin=X4-2
+Added Pin To Net: NetName=SCL Pin=X4-3
+Added Pin To Net: NetName=DIR Pin=X4-4
+Added Pin To Net: NetName=GND Pin=X4-5
+Added Pin To Net: NetName=GND Pin=X5-2
+Added Pin To Net: NetName=VCC Pin=X6-2
+Added Pin To Net: NetName=GND Pin=X7-73
+Added Pin To Net: NetName=GND Pin=X7-74
+Added Pin To Net: NetName=+5? Pin=X7-75
+Added Pin To Net: NetName=+5? Pin=X7-76
+Added Pin To Net: NetName=ANALOG Pin=X9-1
+Added Pin To Net: NetName=+5? Pin=X9-2
+Added Pin To Net: NetName=GND Pin=X9-3
+Added Pin To Net: NetName=DIGITAL Pin=X10-1
+Added Pin To Net: NetName=+5? Pin=X10-2
+Added Pin To Net: NetName=GND Pin=X10-3
+Added Pin To Net: NetName=+5? Pin=X11-1
+Added Pin To Net: NetName=TXD3 Pin=X11-1
+Added Pin To Net: NetName=GND Pin=X11-2
+Added Pin To Net: NetName=RXD3 Pin=X11-2
+Added Pin To Net: NetName=+5? Pin=X11-3
+Added Pin To Net: NetName=GND Pin=X11-4
+Added Pin To Net: NetName=NetX13_1 Pin=X13-1
+Added Pin To Net: NetName=NetX13_2 Pin=X13-2
+Added Pin To Net: NetName=NetX13_3 Pin=X13-3
+Added Pin To Net: NetName=NetX13_4 Pin=X13-4
+Added Pin To Net: NetName=NetX14_1 Pin=X14-1
+Added Pin To Net: NetName=NetX14_2 Pin=X14-2
+Added Pin To Net: NetName=NetX14_3 Pin=X14-3
+Added Pin To Net: NetName=NetX14_4 Pin=X14-4
+Added Pin To Net: NetName=NetX15_1 Pin=X15-1
+Added Pin To Net: NetName=NetX15_2 Pin=X15-2
+Added Pin To Net: NetName=NetX15_3 Pin=X15-3
+Added Pin To Net: NetName=NetX15_4 Pin=X15-4
+Added Pin To Net: NetName=GND Pin=X16-1
+Added Pin To Net: NetName=GND Pin=X16-2
+Added Pin To Net: NetName=GND Pin=X16-3
+Added Pin To Net: NetName=GND Pin=X16-4
+Added Pin To Net: NetName=GND Pin=X16-5
+Added Pin To Net: NetName=GND Pin=X16-6
+Added Pin To Net: NetName=+5? Pin=X17-1
+Added Pin To Net: NetName=GND Pin=X17-1
+Added Pin To Net: NetName=+5? Pin=X17-2
+Added Pin To Net: NetName=+5? Pin=X17-3
+Added Pin To Net: NetName=NetX13_1 Pin=X17-3
+Added Pin To Net: NetName=+5? Pin=X17-4
+Added Pin To Net: NetName=NetX13_2 Pin=X17-4
+Added Pin To Net: NetName=+5? Pin=X17-5
+Added Pin To Net: NetName=NetX13_3 Pin=X17-5
+Added Pin To Net: NetName=+5? Pin=X17-6
+Added Pin To Net: NetName=NetX13_4 Pin=X17-6
+Add Pin To Net: Unknown Pin: Pin X17-7
+Add Pin To Net: Unknown Pin: Pin X17-7
+Add Pin To Net: Unknown Pin: Pin X17-8
+Add Pin To Net: Unknown Pin: Pin X18-1
+Add Pin To Net: Unknown Pin: Pin X18-3
+Add Pin To Net: Unknown Pin: Pin X18-4
+Add Pin To Net: Unknown Pin: Pin X18-5
+Add Pin To Net: Unknown Pin: Pin X18-5
+Add Pin To Net: Unknown Pin: Pin X18-6
+Add Pin To Net: Unknown Pin: Pin X18-6
+Add Pin To Net: Unknown Pin: Pin X18-7
+Add Pin To Net: Unknown Pin: Pin X18-7
+Add Pin To Net: Unknown Pin: Pin X18-8
+Add Pin To Net: Unknown Pin: Pin X19-1
+Add Pin To Net: Unknown Pin: Pin X19-3
+Add Pin To Net: Unknown Pin: Pin X19-4
+Add Pin To Net: Unknown Pin: Pin X19-5
+Add Pin To Net: Unknown Pin: Pin X19-5
+Add Pin To Net: Unknown Pin: Pin X19-6
+Add Pin To Net: Unknown Pin: Pin X19-6
+Add Pin To Net: Unknown Pin: Pin X19-7
+Add Pin To Net: Unknown Pin: Pin X19-7
+Add Pin To Net: Unknown Pin: Pin X19-8
+Added Pin To Net: NetName=D1 Pin=X24-1
+Added Pin To Net: NetName=D2 Pin=X24-2
+Added Pin To Net: NetName=D3 Pin=X24-3
+Added Pin To Net: NetName=A1 Pin=X24-4
+Added Pin To Net: NetName=A2 Pin=X24-5
+Added Pin To Net: NetName=A3 Pin=X24-6
+Added Pin To Net: NetName=+12? Pin=X5-1
+Added Pin To Net: NetName=+12? Pin=X6-1
+Added Net: Name=+12?
+Added Pin To Net: NetName=NetX17_3 Pin=X17-3
+Added Pin To Net: NetName=NetX17_3 Pin=X17-4
+Added Net: Name=NetX17_3
+Added Net: Name=NetX18_3
+Added Net: Name=NetX19_3
+Added Member To Class: ClassName=?3 Member=Component A1 LM2596
+Added Member To Class: ClassName=?3_2 Member=Component C1 150??
+Added Member To Class: ClassName=?3_2 Member=Component C2 150??
+Added Member To Class: ClassName=?3_2 Member=Component C3 150??
+Added Member To Class: ClassName=?3 Member=Component R1 1?
+Added Member To Class: ClassName=?3 Member=Component R1 10?
+Added Member To Class: ClassName=?3 Member=Component R2 10?
+Added Member To Class: ClassName=?3 Member=Component R2 1?
+Added Member To Class: ClassName=?3 Member=Component R3 1?
+Added Member To Class: ClassName=?3 Member=Component R3 10?
+Added Member To Class: ClassName=?3 Member=Component R4 10?
+Added Member To Class: ClassName=?3 Member=Component R5 10?
+Added Member To Class: ClassName=?3 Member=Component S1 BUTTON12
+Added Member To Class: ClassName=?3 Member=Component S2 BUTTON12
+Added Member To Class: ClassName=?3 Member=Component S3 BUTTON12
+Added Member To Class: ClassName=?3 Member=Component VD1 LED0805
+Added Member To Class: ClassName=?3 Member=Component VD2 LED0805
+Added Member To Class: ClassName=?3 Member=Component VD3 LED0805
+Added Member To Class: ClassName=?3 Member=Component X1 DS1069-3M (CWF-3)
+Added Member To Class: ClassName=?3 Member=Component X2 DS1069-3M (CWF-3)
+Added Member To Class: ClassName=?3 Member=Component X3 DS1069-3M (CWF-3)
+Added Member To Class: ClassName=?3 Member=Component X4 DS1069-6M (CWF-6)
+Added Member To Class: ClassName=?3 Member=Component X5 DS1069-2M (CWF-2)
+Added Member To Class: ClassName=?3 Member=Component X6 DS1069-2M (CWF-2)
+Added Member To Class: ClassName=?3 Member=Component X7 Arduino Mega 2560 Pro
+Added Member To Class: ClassName=?3 Member=Component X9 PLS-2.54-3
+Added Member To Class: ClassName=?3 Member=Component X10 PLS-2.54-3
+Added Member To Class: ClassName=?3 Member=Component X11 PBD8
+Added Member To Class: ClassName=?3 Member=Component X11 PLS-2.54-4
+Added Member To Class: ClassName=?3_2 Member=Component X13 DS1069-4M (CWF-4)
+Added Member To Class: ClassName=?3_2 Member=Component X14 DS1069-4M (CWF-4)
+Added Member To Class: ClassName=?3_2 Member=Component X15 DS1069-4M (CWF-4)
+Added Member To Class: ClassName=?3_2 Member=Component X16 PLS-2.54-6
+Added Member To Class: ClassName=?3_2 Member=Component X17 A4988
+Added Member To Class: ClassName=?3_2 Member=Component X17 PLS-2.54-6
+Add Class Member: Failed to add class member : Component X18 A4988
+Add Class Member: Failed to add class member : Component X19 A4988
+Added Member To Class: ClassName=?3_2 Member=Component X24 PLS-2.54-6

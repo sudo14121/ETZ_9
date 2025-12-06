@@ -1,0 +1,66 @@
+Remove Pin=X7C-15 From Net=TXD3
+Remove Pin=X7C-16 From Net=RXD3
+Remove Pin=X7D-21 From Net=SDA
+Remove Pin=X7D-22 From Net=SCL
+Remove Pin=X7D-23 From Net=SERVO
+Remove Pin=X7D-24 From Net=CS
+Remove Pin=X7D-25 From Net=DS
+Remove Pin=X7D-26 From Net=RES
+Remove Pin=X7D-27 From Net=DIGITAL
+Remove Pin=X7D-28 From Net=BUTTON1
+Remove Pin=X7D-29 From Net=BUTTON2
+Remove Pin=X7D-30 From Net=BUTTON3
+Remove Pin=X7D-31 From Net=DIR
+Remove Pin=X7A-34 From Net=LED1
+Remove Pin=X7A-35 From Net=LED2
+Remove Pin=X7A-36 From Net=STEP1
+Remove Pin=X7A-37 From Net=DIR1
+Remove Pin=X7A-38 From Net=STEP2
+Remove Pin=X7A-39 From Net=DIR2
+Remove Pin=X7A-40 From Net=STEP3
+Remove Pin=X7A-41 From Net=DIR3
+Remove Pin=X7A-43 From Net=D1
+Remove Pin=X7A-44 From Net=D2
+Remove Pin=X7A-45 From Net=D3
+Remove Pin=X7B-52 From Net=MOSI
+Remove Pin=X7B-53 From Net=CLK
+Remove Pin=X7B-55 From Net=ANALOG
+Remove Pin=X7B-56 From Net=TCRT1
+Remove Pin=X7B-57 From Net=TCRT2
+Remove Pin=X7B-58 From Net=A1
+Remove Pin=X7B-59 From Net=A2
+Remove Pin=X7B-60 From Net=A3
+Remove Pin=X11-4 From Net=MOSI
+Remove Pin=X11-5 From Net=CLK
+Remove Pin=X11-6 From Net=CS
+Remove Pin=X11-7 From Net=DS
+Remove Pin=X11-8 From Net=RES
+Remove Pin=X17B-1 From Net=DIR1
+Remove Pin=X17B-2 From Net=STEP1
+Remove Pin=X18B-1 From Net=DIR2
+Remove Pin=X18B-2 From Net=STEP2
+Remove Pin=X19B-1 From Net=DIR3
+Remove Pin=X19B-2 From Net=STEP3
+Change Component Comment: Designator=X8 Old Comment==nam New Comment=PLS-2.54-3
+Change Component Comment: Designator=X9 Old Comment==nam New Comment=PLS-2.54-3
+Change Component Comment: Designator=X10 Old Comment==nam New Comment=PLS-2.54-4
+Change Component Designator: OldDesignator=R6 NewDesignator=R1
+Change Component Designator: OldDesignator=R7 NewDesignator=R2
+Change Component Designator: OldDesignator=R8 NewDesignator=R3
+Change Component Designator: OldDesignator=X8 NewDesignator=X9
+Change Component Designator: OldDesignator=X9 NewDesignator=X10
+Change Component Designator: OldDesignator=X10 NewDesignator=X11
+Change Component Designator: OldDesignator=X12 NewDesignator=X13
+Change Component Designator: OldDesignator=X13 NewDesignator=X14
+Change Component Designator: OldDesignator=X14 NewDesignator=X15
+Change Component Designator: OldDesignator=X15 NewDesignator=X16
+Change Component Designator: OldDesignator=X16 NewDesignator=X17
+Change Component Designator: OldDesignator=X20 NewDesignator=X24
+Change Pin Designator/Name:  Old Designator=X14-1 Old Name=1 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=X14-2 Old Name=2 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=X14-3 Old Name=3 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=X14-4 Old Name=4 New Designator =4 New Name=4
+Change Pin Designator/Name:  Old Designator=X15-1 Old Name=1 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=X15-2 Old Name=2 New Designator =2 New Name=2
+Change Pin Designator/Name:  Old Designator=X15-3 Old Name=3 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=X15-4 Old Name=4 New Designator =4 New Name=4

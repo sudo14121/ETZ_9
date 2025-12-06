@@ -84,7 +84,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HQEFKRHZ
 
 [Document3]
-DocumentPath=ETZ.PcbDoc
+DocumentPath=ETZZ.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -98,7 +98,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=NXCRGDMM
+DocumentUniqueId=RWSXWBDS
 
 [Configuration1]
 Name=Sources
