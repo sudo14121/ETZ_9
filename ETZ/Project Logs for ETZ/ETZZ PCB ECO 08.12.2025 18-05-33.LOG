@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=C1 Old Footprint=CAPALUM_10x12.5 New Footprint=SK050M0100B3F-0811
+Change Component Footprint: Designator=C2 Old Footprint=CAPALUM_10x12.5 New Footprint=SK050M0100B3F-0811
+Change Component Footprint: Designator=C3 Old Footprint=CAPALUM_10x12.5 New Footprint=SK050M0100B3F-0811
+Change Component Comment : Designator=C1 Old Comment=150?? New Comment=???????????
+Change Component Comment : Designator=C2 Old Comment=150?? New Comment=???????????
+Change Component Comment : Designator=C3 Old Comment=150?? New Comment=???????????
+Change component parameters: Designator = "C1" ("C1"); Footprint = "CAPALUM_10x12.5"; UniqueID = "\NYRJEJGO" ("\NYRJEJGO")
+Change component parameters (AddParameter): Name = "nam"; Value = "???????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nominal"; Value = "100??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "voltage"; Value = "50?"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2" ("C2"); Footprint = "CAPALUM_10x12.5"; UniqueID = "\SGYTWQRJ" ("\SGYTWQRJ")
+Change component parameters (AddParameter): Name = "nam"; Value = "???????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nominal"; Value = "100??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "voltage"; Value = "50?"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3" ("C3"); Footprint = "CAPALUM_10x12.5"; UniqueID = "\MUGURZDU" ("\MUGURZDU")
+Change component parameters (AddParameter): Name = "nam"; Value = "???????????"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nominal"; Value = "100??"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "voltage"; Value = "50?"; VariantName = "[No Variations]"
