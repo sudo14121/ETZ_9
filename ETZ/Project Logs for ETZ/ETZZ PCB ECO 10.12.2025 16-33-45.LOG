@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=+5? Pin=X11-1
+Removed Pin From Net: NetName=GND Pin=X11-2
+Removed Pin From Net: NetName=CLK Pin=X11-5
+Removed Pin From Net: NetName=CS Pin=X11-6
+Removed Pin From Net: NetName=DS Pin=X11-7
+Removed Pin From Net: NetName=RES Pin=X11-8
+Change component parameters: Designator = "X11" ("X11"); Footprint = "PBD8"; UniqueID = "\BRHKFUXO" ("\BRHKFUXO")
+Change component parameters (AddParameter): Name = "Contact_1"; Value = "GND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_2"; Value = "VDD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_3"; Value = "SCL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_4"; Value = "SDA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_5"; Value = "RES"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_6"; Value = "DC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_7"; Value = "CS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact_8"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "nam"; Value = "PBD8"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Parameter 1"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=X11-1
+Added Pin To Net: NetName=+5? Pin=X11-2
+Added Pin To Net: NetName=CLK Pin=X11-3
+Added Pin To Net: NetName=RES Pin=X11-5
+Added Pin To Net: NetName=DS Pin=X11-6
+Added Pin To Net: NetName=CS Pin=X11-7

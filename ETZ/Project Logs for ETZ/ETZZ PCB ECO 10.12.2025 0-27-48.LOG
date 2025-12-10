@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=DIGITAL Pin=X7-31
+Added Pin To Net: NetName=DIGITAL Pin=X7-19
+Added Member To Class: ClassName=?3 Member=Component X8 PLS-2,54-3
