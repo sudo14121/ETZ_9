@@ -1,0 +1,12 @@
+Output: Сверловка
+Type  : NC Drill
+From  : PCB Document [ETZZ.PcbDoc]
+   Generated File[[ETZ]_NC Drill_2025-12-19.TXT]
+   Generated File[[ETZ]_NC Drill_2025-12-19.LDP]
+   Generated File[[ETZ]_NC Drill_2025-12-19.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 19:26:10 On 19.12.2025
