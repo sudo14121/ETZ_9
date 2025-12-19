@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\91125\OneDrive\??????? ????\alletz\ETZ\ETZZ.PcbDoc
-Date     : 12.12.2025
-Time     : 23:02:33
+PCB File : C:\Users\FRZNMN\Documents\–¿¡Œ“¿\ETZ\ETZ_9\ETZ\ETZZ.PcbDoc
+Date     : 19.12.2025
+Time     : 19:25:41
 
 Processing Rule : Clearance Constraint (Gap=0.125mm) (OnTopLayer OR OnBottomLayer),(All)
 Rule Violations :0
@@ -12,7 +12,7 @@ Rule Violations :0
 Processing Rule : Clearance Constraint (Gap=0.5mm) (InPolygonClass('GND')),(All)
 Rule Violations :0
 
-Processing Rule : Clearance Constraint (Gap=0.5mm) (InPolygonClass('+5?')),(All)
+Processing Rule : Clearance Constraint (Gap=0.5mm) (InPolygonClass('+5¬')),(All)
 Rule Violations :0
 
 Processing Rule : Clearance Constraint (Gap=0.5mm) (InPolygonClass('VCC')),(All)
@@ -72,4 +72,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:08
+Time Elapsed        : 00:00:05
