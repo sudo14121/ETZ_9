@@ -1,3 +1,7 @@
+#include "move.h"
+#include "display.h"
+#include "display.h"
+
 void setup() {
   // put your setup code here, to run once:
 
