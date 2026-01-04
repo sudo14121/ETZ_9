@@ -4,15 +4,23 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
     targetPos = pos;
 
     int distance = abs(targetPos.x - nowPos.x);
+    
+    distance = (3200 / 360);
     if (distance == 0)
       return;
 
     if (targetPos.x > nowPos.x)
+    {
       digitalWrite(DIRPIN, FORWARD);
+      digitalWrite(DIRPIN2, FORWARD2);
+    }
     else
+    {
       digitalWrite(DIRPIN, !FORWARD);
+      digitalWrite(DIRPIN2, !FORWARD2);
+    }
 
-    int razgonDist = min(distance / 2, 50);
+    int razgonDist = distance / 1.2;
 
     timestep = 2000;
     stepsGo = 0;
@@ -28,8 +36,10 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
 
     while (stepsGo < distance) {
       digitalWrite(STEPPIN, HIGH);
+      digitalWrite(STEPPIN2, HIGH);
       delayMicroseconds(timestep);
       digitalWrite(STEPPIN, LOW);
+      digitalWrite(STEPPIN2, LOW);
       delayMicroseconds(timestep);
 
       stepsGo++;
@@ -54,6 +64,8 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
   void Motor::StepperInit() {
     pinMode(DIRPIN, OUTPUT);
     pinMode(STEPPIN, OUTPUT);
+    pinMode(DIRPIN2, OUTPUT);
+    pinMode(STEPPIN2, OUTPUT);
   }
 
   Point Motor::getPos() {

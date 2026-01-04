@@ -21,12 +21,15 @@ public:
     nowPos = { 0, 0 };
     FORWARD = 1;
   }
-  Motor(const char *mName, int dir, int step, Point start, bool forward) {
+  Motor(const char *mName, int dir, int step, int dir2, int step2, Point start, bool forward = 1, bool forward2 = 0) {
     name = mName;
     DIRPIN = dir;
     STEPPIN = step;
+    DIRPIN2 = dir2;
+    STEPPIN2 = step2;
     nowPos = start;
     FORWARD = forward;
+    FORWARD2 = forward2;
   }
   void goToPoint(Point pos, int maxSpeed);
   void setStart(Point set);
@@ -38,10 +41,11 @@ private:
   Point targetPos;
   Point nowPos;
   int stepsGo;
-  int STEPPIN;
-  int DIRPIN;
-  int timestep = 100;
+  int STEPPIN, STEPPIN2;
+  int DIRPIN, DIRPIN2;
+  int timestep = 1000;
   bool FORWARD = 0;
+  bool FORWARD2 = 0;
   int acceleration = 5;
 };
 
@@ -74,8 +78,7 @@ public:
     STEP = step;
     start = startPos;
     need = needPlus;
-    left = Motor("left", 35, 37, startPos, 1);
-    right = Motor("right", 69, 67, startPos, 0);
+    motors = Motor("left", 35, 37, 69, 67, startPos);
   }
   void initServo();
   void initYStepper();
@@ -91,22 +94,22 @@ private:
   int STEP, DIR;
   int SERVO;
   Servo brush;
-  int downPos = 90;
+  int downPos = 60;
   int upPos = 145;
   Point start = { 0, 0 };
+  Point now_position = {0, 0};
   int need = 0;
-  Motor left;
-  Motor right;
+  Motor motors;
   Sensors sens;
 };
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
-#define OLED_MOSI 51  // D1
-#define OLED_CLK  52  // D0  
-#define OLED_DC   24  // DC
-#define OLED_CS   23 // CS
-#define OLED_RESET 25  // RES
+#define OLED_MOSI 51 
+#define OLED_CLK  52   
+#define OLED_DC   24 
+#define OLED_CS   23 
+#define OLED_RESET 25  
 
 class OLEDMenu {
 public:
@@ -132,16 +135,16 @@ public:
   int getSelected();
   void showText(String text);
   ~OLEDMenu();
-  String transliterate(String text);
+  void showMenu();
+  void setLastTime(uint64_t timer);
 private:
   Adafruit_SSD1306 *display;
   int upBtn, downBtn, selectBtn;
   int selected;
   int modeSelected = -1;
-  unsigned long lastTime;
+  uint64_t lastTime;
   String *modes;
   int modeCount;
 
-  void showMenu();
   void showSelected();
 };
