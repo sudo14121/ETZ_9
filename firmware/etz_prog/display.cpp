@@ -10,7 +10,7 @@ void OLEDMenu::init() {
 
   showText("robot redy");
   delay(1000);
-  showText("select mode");
+  showMenu();
 }
 
 void OLEDMenu::update() {
@@ -41,9 +41,15 @@ void OLEDMenu::update() {
 }
 
 int OLEDMenu::getSelected() {
-  int temp = modeSelected;
+  int temp = -1;
+  temp = modeSelected;
   modeSelected = -1;
   return temp;
+}
+
+void OLEDMenu::setLastTime(uint64_t timer)
+{
+  lastTime = timer;
 }
 
 void OLEDMenu::showText(String text) {
