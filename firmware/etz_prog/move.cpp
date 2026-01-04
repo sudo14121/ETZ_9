@@ -1,26 +1,6 @@
-#include <Arduino.h>
+#include "allclass.h"
 
-struct Point {
-  int x, y;
-};
-
-class Motor {
-public:
-  Motor() {
-    name = "мотор";
-    DIRPIN = 0;
-    STEPPIN = 0;
-    nowPos = { 0, 0 };
-    FORWARD = 1;
-  }
-  Motor(const char *mName, int dir, int step, Point start, bool forward) {
-    name = mName;
-    DIRPIN = dir;
-    STEPPIN = step;
-    nowPos = start;
-    FORWARD = forward;
-  }
-  void goToPoint(Point pos, int maxSpeed) {
+void Motor::goToPoint(Point pos, int maxSpeed) {
     targetPos = pos;
 
     int distance = abs(targetPos.x - nowPos.x);
@@ -67,27 +47,15 @@ public:
 
     nowPos = targetPos;
   }
-  void setStart(Point set) {
+  void Motor::setStart(Point set) {
     nowPos = set;
   }
 
-  void StepperInit() {
+  void Motor::StepperInit() {
     pinMode(DIRPIN, OUTPUT);
     pinMode(STEPPIN, OUTPUT);
   }
 
-  Point getPos() {
+  Point Motor::getPos() {
     return nowPos;
   }
-
-private:
-  const char *name;
-  Point targetPos;
-  Point nowPos;
-  int stepsGo;
-  int STEPPIN;
-  int DIRPIN;
-  int timestep = 100;
-  bool FORWARD = 0;
-  int acceleration = 5;
-};
