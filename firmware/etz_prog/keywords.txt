@@ -1,0 +1,49 @@
+#######################################
+# Syntax Coloring Map For RobotPainter
+#######################################
+
+#######################################
+# Classes (KEYWORD2)
+#######################################
+Motor	KEYWORD2
+Sensors	KEYWORD2
+Paint	KEYWORD2
+OLEDMenu	KEYWORD2
+Point	KEYWORD2
+
+#######################################
+# Methods (KEYWORD1)
+#######################################
+goToPoint	KEYWORD1
+setStart	KEYWORD1
+StepperInit	KEYWORD1
+getPos	KEYWORD1
+initSensors	KEYWORD1
+calibr	KEYWORD1
+ishereblack	KEYWORD1
+initServo	KEYWORD1
+initYStepper	KEYWORD1
+initDrive	KEYWORD1
+initSens	KEYWORD1
+downBrush	KEYWORD1
+upBrush	KEYWORD1
+drawLine	KEYWORD1
+drawDot	KEYWORD1
+goingStartPos	KEYWORD1
+init	KEYWORD1
+update	KEYWORD1
+getSelected	KEYWORD1
+showText	KEYWORD1
+showMenu	KEYWORD1
+showSelected	KEYWORD1
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SCREEN_WIDTH	LITERAL1
+SCREEN_HEIGHT	LITERAL1
+OLED_MOSI	LITERAL1
+OLED_CLK	LITERAL1
+OLED_DC	LITERAL1
+OLED_CS	LITERAL1
+OLED_RESET	LITERAL1
