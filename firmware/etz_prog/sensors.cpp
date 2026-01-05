@@ -1,39 +1,42 @@
 #include "allclass.h"
 
-void Sensors::initSensors()
-{
-    pinMode(pinLeft, INPUT);
-    pinMode(pinRight, INPUT);
+void Sensors::initSensors() {
+  pinMode(pinLeft, INPUT);
+  pinMode(pinRight, INPUT);
 }
-void Sensors::calibr()
-{
-    digitalWrite(LedPin, 1);
-    uint64_t timerCalibr = millis();
-    int wl = 1023, wr = 1023, bl = 0, br = 0;
-    while (millis() * timerCalibr < 5000)
-    {
-        int leftS = analogRead(pinLeft);
-        int rightS = analogRead(pinRight);
-        if (leftS > bl)
-            bl = leftS;
-        if (rightS > br)
-            br = rightS;
-        if (leftS < wl)
-            wl = leftS;
-        if (rightS < wr)
-            wr = rightS;
-    }
-    digitalWrite(LedPin, 0);
-    delay(200);
-    digitalWrite(LedPin, 1);
-    delay(10000);
-    EEPROM.write(0, ((wl + bl) / 2) / 4);
-    EEPROM.write(1, ((wr + br) / 2) / 4);
-    digitalWrite(LedPin, 0);
+void Sensors::calibr() {
+  digitalWrite(LedPin, 1);
+  uint64_t timerCalibr = millis();
+  int wl = 1023, wr = 1023, bl = 0, br = 0;
+  while (millis() - timerCalibr < 5000) {
+    int leftS = analogRead(pinLeft);
+    int rightS = analogRead(pinRight);
+    if (leftS > bl)
+      bl = leftS;
+    if (rightS > br)
+      br = rightS;
+    if (leftS < wl)
+      wl = leftS;
+    if (rightS < wr)
+      wr = rightS;
+  }
+  digitalWrite(LedPin, 0);
+  delay(200);
+  digitalWrite(LedPin, 1);
+  delay(10000);
+  EEPROM.write(0, ((wl + bl) / 2) / 4);
+  EEPROM.write(1, ((wr + br) / 2) / 4);
+  digitalWrite(LedPin, 0);
 }
-bool Sensors::ishereblack()
+bool Sensors::ishereblack() {
+  if (analogRead(pinLeft) > isblackLeft && analogRead(pinRight) > isblackRight) {
+    return 1;
+  }
+  return 0;
+}
+
+void Sensors::newpos()
 {
-    if (analogRead(pinLeft) > isblackLeft && analogRead(pinRight) > isblackRight)
-        return 1;
-    return 0;
+  EEPROM.write(2, analogRead(pinLeft) / 4);
+  EEPROM.write(3, analogRead(pinRight) / 4);  
 }

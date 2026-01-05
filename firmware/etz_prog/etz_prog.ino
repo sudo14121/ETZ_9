@@ -3,17 +3,17 @@
 #define TASKS_COUNT 10
 #define STEPSFORONE 3200
 
+//#define CALIBR
+
 String codes[TASKS_COUNT] = { "dot", "line5", "line7", "four", "five", "six", "seven", "eight", "nine", "ten" };
 OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 
-Paint robot(28, 35, 37, { 0, 0 }, 110);
+Paint robot(28, 35, 37, { 0, 0 }, 120);
 
 
 class TASKS {
 public:
-  TASKS()
-  {
-    
+  TASKS() {
   }
   void doing(int mode) {
     if (mode != -1)
@@ -53,12 +53,14 @@ public:
 
   void first() {
     robot.drawLine({ 0, 0 }, { 100, 0 }, 2000);
+    robot.drawDot({ 120, 0 }, 5000);
+    robot.drawLine({ 122, 0 }, { 180, 0 }, 2000);
     menu.showMenu();
     menu.setLastTime(millis());
   }
 
   void second() {
-    robot.drawDot({800, 0}, 5000);
+
     menu.showMenu();
     menu.setLastTime(millis());
   }
@@ -116,12 +118,25 @@ void setup() {
   robot.initSens();
   robot.initServo();
   menu.init();
+
+#ifdef CALIBR
+  robot.calibr();
+  Serial.println(EEPROM.read(0) * 4);
+  Serial.println(EEPROM.read(1) * 4);
+  menu.calibr_sens();
+#endif
+#ifndef CALIBR
+  menu.calibr_sens();
+  delay(2000);
+  robot.goingStartPos(2000);
+#endif
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+#ifndef CALIBR
   digitalWrite(33, 1);
   menu.update();
   int temp = menu.getSelected();
   tasks.doing(temp);
+#endif
 }
