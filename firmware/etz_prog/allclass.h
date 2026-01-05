@@ -94,7 +94,7 @@ private:
   int STEP, DIR;
   int SERVO;
   Servo brush;
-  int downPos = 60;
+  int downPos = 70;
   int upPos = 145;
   Point start = { 0, 0 };
   Point now_position = { 0, 0 };
