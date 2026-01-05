@@ -60,6 +60,7 @@ public:
   void initSensors();
   void calibr();
   bool ishereblack();
+  void newpos();
 
 private:
   int pinLeft, pinRight;
@@ -87,6 +88,7 @@ public:
   void drawLine(Point start, Point finish, int speed);
   void drawDot(Point pos, int speed);
   void goingStartPos(int speed);
+  void calibr();
 
 private:
   int STEP, DIR;
@@ -95,7 +97,7 @@ private:
   int downPos = 60;
   int upPos = 145;
   Point start = { 0, 0 };
-  Point now_position = {0, 0};
+  Point now_position = { 0, 0 };
   int need = 0;
   Motor motors;
   Sensors sens;
@@ -103,11 +105,11 @@ private:
 
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
-#define OLED_MOSI 51 
-#define OLED_CLK  52   
-#define OLED_DC   24 
-#define OLED_CS   23 
-#define OLED_RESET 25  
+#define OLED_MOSI 51
+#define OLED_CLK 52
+#define OLED_DC 24
+#define OLED_CS 23
+#define OLED_RESET 25
 
 class OLEDMenu {
 public:
@@ -135,6 +137,8 @@ public:
   ~OLEDMenu();
   void showMenu();
   void setLastTime(uint64_t timer);
+  void calibr_sens();
+  void sensorsdisp();
 private:
   Adafruit_SSD1306 *display;
   int upBtn, downBtn, selectBtn;

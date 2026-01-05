@@ -5,7 +5,7 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
 
     int distance = abs(targetPos.x - nowPos.x);
     
-    distance = 3200 * (distance / 138.0);
+    distance = 3200 * (distance / 137.5);
     if (distance == 0)
       return;
 
