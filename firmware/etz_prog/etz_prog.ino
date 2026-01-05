@@ -6,7 +6,7 @@
 String codes[TASKS_COUNT] = { "dot", "line5", "line7", "four", "five", "six", "seven", "eight", "nine", "ten" };
 OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 
-Paint robot(28, 41, 39, { 0, 0 }, 110);
+Paint robot(28, 35, 37, { 0, 0 }, 110);
 
 
 class TASKS {
@@ -52,7 +52,7 @@ public:
   }
 
   void first() {
-    robot.drawLine({ 2, 0 }, { STEPSFORONE, 0 }, 2000);
+    robot.drawLine({ 0, 0 }, { 100, 0 }, 2000);
     menu.showMenu();
     menu.setLastTime(millis());
   }
