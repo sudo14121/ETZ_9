@@ -16,8 +16,6 @@ class Motor {
 public:
   Motor() {
     name = "мотор";
-    DIRPIN = 0;
-    STEPPIN = 0;
     nowPos = { 0, 0 };
     FORWARD = 1;
   }
@@ -78,7 +76,7 @@ public:
     STEP = step;
     start = startPos;
     need = needPlus;
-    motors = Motor("left", 35, 37, 69, 67, startPos);
+    motors = Motor("motors", 41, 39, 69, 67, startPos);
   }
   void initServo();
   void initYStepper();
