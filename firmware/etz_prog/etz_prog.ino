@@ -10,7 +10,6 @@ OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 
 Paint robot(28, 35, 37, { 0, 0 }, 120);
 
-
 class TASKS {
 public:
   TASKS() {
@@ -126,9 +125,8 @@ void setup() {
   menu.calibr_sens();
 #endif
 #ifndef CALIBR
-  menu.calibr_sens();
-  delay(2000);
   robot.goingStartPos(2000);
+  menu.update();
 #endif
 }
 
