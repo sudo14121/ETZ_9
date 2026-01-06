@@ -8,18 +8,47 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-struct Point {
+#include <AS5600.h>
+#include <Wire.h>
+
+
+class encoder
+{
+public:
+  encoder()
+  {
+    encnow = 0;
+    encold = 0;
+    count = 0; 
+  }
+  void encinit();
+  bool count_enc();
+  int32_t getEnc();
+  void setEnc(int angle);
+
+private:
+  AS5600 enc;
+  volatile int encnow;
+  volatile int encold;
+  volatile int count;
+};
+
+struct Point
+{
   int x, y;
 };
 
-class Motor {
+class Motor
+{
 public:
-  Motor() {
+  Motor()
+  {
     name = "мотор";
-    nowPos = { 0, 0 };
+    nowPos = {0, 0};
     FORWARD = 1;
   }
-  Motor(const char *mName, int dir, int step, int dir2, int step2, Point start, bool forward = 1, bool forward2 = 0) {
+  Motor(const char *mName, int dir, int step, int dir2, int step2, Point start, bool forward = 1, bool forward2 = 0)
+  {
     name = mName;
     DIRPIN = dir;
     STEPPIN = step;
@@ -35,6 +64,7 @@ public:
   Point getPos();
 
 private:
+  encoder enc;
   const char *name;
   Point targetPos;
   Point nowPos;
@@ -45,15 +75,21 @@ private:
   bool FORWARD = 0;
   bool FORWARD2 = 0;
   int acceleration = 5;
+  float len = 137.5;
+  int stepsperone = 3200;
+  volatile int encodercount = 0;
 };
 
-class Sensors {
+class Sensors
+{
 public:
-  Sensors() {
+  Sensors()
+  {
     pinLeft = 0;
     pinRight = 0;
   }
-  Sensors(int sensor1, int sensor2) {
+  Sensors(int sensor1, int sensor2)
+  {
     pinLeft = sensor1;
     pinRight = sensor2;
   }
@@ -69,9 +105,11 @@ private:
   int isblackRight = EEPROM.read(1) * 4;
 };
 
-class Paint {
+class Paint
+{
 public:
-  Paint(int servoPin, int dir, int step, Point startPos, int needPlus) {
+  Paint(int servoPin, int dir, int step, Point startPos, int needPlus)
+  {
     SERVO = servoPin;
     DIR = dir;
     STEP = step;
@@ -96,8 +134,8 @@ private:
   Servo brush;
   int downPos = 70;
   int upPos = 145;
-  Point start = { 0, 0 };
-  Point now_position = { 0, 0 };
+  Point start = {0, 0};
+  Point now_position = {0, 0};
   int need = 0;
   Motor motors;
   Sensors sens;
@@ -111,16 +149,19 @@ private:
 #define OLED_CS 23
 #define OLED_RESET 25
 
-class OLEDMenu {
+class OLEDMenu
+{
 public:
-  OLEDMenu(int upPin, int downPin, int selectPin, int count, String modeNames[]) {
+  OLEDMenu(int upPin, int downPin, int selectPin, int count, String modeNames[])
+  {
     upBtn = upPin;
     downBtn = downPin;
     selectBtn = selectPin;
     modeCount = count;
 
     modes = new String[modeCount];
-    for (int i = 0; i < modeCount; i++) {
+    for (int i = 0; i < modeCount; i++)
+    {
       modes[i] = modeNames[i];
     }
 
@@ -139,6 +180,7 @@ public:
   void setLastTime(uint64_t timer);
   void calibr_sens();
   void sensorsdisp();
+
 private:
   Adafruit_SSD1306 *display;
   int upBtn, downBtn, selectBtn;
