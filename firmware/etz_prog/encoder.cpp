@@ -17,7 +17,7 @@ bool encoder::count_enc()
 {
     encold = encnow;
     encnow = enc.readAngle();
-    if (abs(encold - encnow) > 3)
+    if (abs(encold - encnow) >= 1)
     {
         count ++;
         return 1;
@@ -29,7 +29,7 @@ int32_t encoder::getEnc()
 {
     encold = encnow;
     encnow = enc.readAngle();
-    return encnow;
+    return abs(encnow - encold);
 }
 
 void encoder::setEnc(int angle)

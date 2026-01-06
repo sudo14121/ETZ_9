@@ -47,7 +47,7 @@ public:
     nowPos = {0, 0};
     FORWARD = 1;
   }
-  Motor(const char *mName, int dir, int step, int dir2, int step2, Point start, bool forward = 1, bool forward2 = 0)
+  Motor(const char *mName, int dir, int step, int dir2, int step2, Point start, bool forward = 0, bool forward2 = 1)
   {
     name = mName;
     DIRPIN = dir;
@@ -71,7 +71,7 @@ private:
   int stepsGo;
   int STEPPIN, STEPPIN2;
   int DIRPIN, DIRPIN2;
-  int timestep = 1000;
+  int timestep = 2000;
   bool FORWARD = 0;
   bool FORWARD2 = 0;
   int acceleration = 5;
@@ -126,6 +126,7 @@ public:
   void drawLine(Point start, Point finish, int speed);
   void drawDot(Point pos, int speed);
   void goingStartPos(int speed);
+  void backzone(int speed);
   void calibr();
 
 private:

@@ -8,7 +8,7 @@
 String codes[TASKS_COUNT] = { "dot", "line5", "line7", "four", "five", "six", "seven", "eight", "nine", "ten" };
 OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 
-Paint robot(28, 35, 37, { 0, 0 }, 120);
+Paint robot(28, 35, 37, { 0, 0 }, 118);
 
 class TASKS {
 public:
@@ -51,9 +51,14 @@ public:
   }
 
   void first() {
+    robot.goingStartPos(5000);
+
     robot.drawLine({ 0, 0 }, { 100, 0 }, 2000);
-    robot.drawDot({ 120, 0 }, 5000);
-    robot.drawLine({ 122, 0 }, { 180, 0 }, 2000);
+    robot.drawDot({ 120, 0 }, 2000);
+    robot.drawLine({ 122, 0 }, { 250, 0 }, 2000);
+    robot.drawDot({ 10, 0 }, 2000);
+
+    robot.backzone(5000); 
     menu.showMenu();
     menu.setLastTime(millis());
   }
@@ -124,10 +129,7 @@ void setup() {
   Serial.println(EEPROM.read(1) * 4);
   menu.calibr_sens();
 #endif
-#ifndef CALIBR
-  robot.goingStartPos(2000);
-  menu.update();
-#endif
+
 }
 
 void loop() {

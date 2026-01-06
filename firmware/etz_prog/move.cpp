@@ -1,43 +1,38 @@
 #include "allclass.h"
 
-void Motor::goToPoint(Point pos, int maxSpeed)
-{
+void Motor::goToPoint(Point pos, int maxSpeed) {
   targetPos = pos;
 
   int distance = abs(targetPos.x - nowPos.x);
+  //if (distance > 5) distance -= 5;
 
   distance = stepsperone * (distance / len);
   if (distance == 0)
     return;
 
-  if (targetPos.x > nowPos.x)
-  {
+  if (targetPos.x > nowPos.x) {
     digitalWrite(DIRPIN, FORWARD);
     digitalWrite(DIRPIN2, FORWARD2);
-  }
-  else
-  {
+  } else {
     digitalWrite(DIRPIN, !FORWARD);
     digitalWrite(DIRPIN2, !FORWARD2);
   }
 
   int razgonDist = distance / 1.2;
 
-  timestep = 1500;
+  timestep = 800;
   stepsGo = 0;
 
   int minTimeStep = 1000000 / maxSpeed;
   if (minTimeStep < 100)
     minTimeStep = 100;
 
-  if (distance < 20)
-  {
+  if (distance < 20) {
     razgonDist = 0;
     timestep = minTimeStep;
   }
 
-  while (stepsGo < distance)
-  {
+  while (stepsGo < distance) {
     encodercount = enc.getEnc();
 
     digitalWrite(STEPPIN, HIGH);
@@ -47,19 +42,16 @@ void Motor::goToPoint(Point pos, int maxSpeed)
     digitalWrite(STEPPIN2, LOW);
     delayMicroseconds(timestep);
 
-    if (enc.count_enc())
+    Serial.println(encodercount);
+    //if (encodercount > 0)
       stepsGo++;
 
-    if (razgonDist > 0)
-    {
-      if (stepsGo < razgonDist && timestep > minTimeStep)
-      {
+    if (razgonDist > 0) {
+      if (stepsGo < razgonDist && timestep > minTimeStep) {
         timestep -= acceleration;
         if (timestep < minTimeStep)
           timestep = minTimeStep;
-      }
-      else if (stepsGo >= (distance - razgonDist) && timestep < 2000)
-      {
+      } else if (stepsGo >= (distance - razgonDist) && timestep < 2000) {
         timestep += acceleration;
       }
     }
@@ -67,13 +59,11 @@ void Motor::goToPoint(Point pos, int maxSpeed)
 
   nowPos = targetPos;
 }
-void Motor::setStart(Point set)
-{
+void Motor::setStart(Point set) {
   nowPos = set;
 }
 
-void Motor::StepperInit()
-{
+void Motor::StepperInit() {
   enc.encinit();
 
   pinMode(DIRPIN, OUTPUT);
@@ -82,7 +72,6 @@ void Motor::StepperInit()
   pinMode(STEPPIN2, OUTPUT);
 }
 
-Point Motor::getPos()
-{
+Point Motor::getPos() {
   return nowPos;
 }
