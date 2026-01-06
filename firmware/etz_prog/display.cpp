@@ -47,8 +47,7 @@ int OLEDMenu::getSelected() {
   return temp;
 }
 
-void OLEDMenu::setLastTime(uint64_t timer)
-{
+void OLEDMenu::setLastTime(uint64_t timer) {
   lastTime = timer;
 }
 
@@ -96,6 +95,31 @@ void OLEDMenu::showSelected() {
   display->setCursor(0, 20);
   display->print("go: ");
   display->println(modes[selected]);
+  display->display();
+  delay(500);
+}
+
+void OLEDMenu::calibr_sens() {
+  display->clearDisplay();
+  display->setTextSize(1);
+  display->setCursor(0, 20);
+  display->print("left: ");
+  display->println(EEPROM.read(0) * 4);
+  display->print("right: ");
+  display->println(EEPROM.read(1) * 4);
+  display->display();
+  delay(500);
+}
+
+void OLEDMenu::sensorsdisp()
+{
+   display->clearDisplay();
+  display->setTextSize(1);
+  display->setCursor(0, 20);
+  display->print("left: ");
+  display->println(EEPROM.read(2) * 4);
+  display->print("right: ");
+  display->println(EEPROM.read(3) * 4);
   display->display();
   delay(500);
 }
