@@ -67,8 +67,13 @@ void Paint::goingStartPos(int speed) {
     motors.goToPoint({ motors.getPos().x + plus, 0 }, speed);
     sens.newpos();
   }
+  if (plus == 1)
+    motors.setStart({ -need, 0 });
+}
 
-  motors.setStart({ -need, 0 });
+void Paint::backzone(int speed) {
+  goingStartPos(speed);
+  motors.goToPoint({ -need - 70, 0 }, speed);
 }
 
 void Paint::calibr() {
