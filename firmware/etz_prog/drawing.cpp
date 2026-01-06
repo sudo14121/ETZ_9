@@ -54,13 +54,30 @@ void Paint::drawDot(Point pos, int speed) {
 }
 
 void Paint::goingStartPos(int speed) {
+  int plus = 1;
+  if (motors.getPos().x != 0) {
+    plus = -1;
+  }
   while (!sens.ishereblack()) {
-    motors.goToPoint({ motors.getPos().x + 1, 0 }, speed);
+    motors.goToPoint({ motors.getPos().x + plus, 0 }, speed);
+    sens.newpos();
   }
 
   while (sens.ishereblack()) {
-    motors.goToPoint({ motors.getPos().x + 1, 0 }, speed);
+    motors.goToPoint({ motors.getPos().x + plus, 0 }, speed);
+    sens.newpos();
   }
+  if (plus == 1)
+    motors.setStart({ -need, 0 });
+}
 
-  motors.setStart({ -need, 0 });
+void Paint::backzone(int speed) {
+  goingStartPos(speed);
+  motors.goToPoint({ -need - 70, 0 }, speed);
+}
+
+void Paint::calibr() {
+  sens.calibr();
+  Serial.println(EEPROM.read(0) * 4);
+  Serial.println(EEPROM.read(1) * 4);
 }

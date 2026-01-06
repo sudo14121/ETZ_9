@@ -1,73 +1,77 @@
 #include "allclass.h"
 
 void Motor::goToPoint(Point pos, int maxSpeed) {
-    targetPos = pos;
+  targetPos = pos;
 
-    int distance = abs(targetPos.x - nowPos.x);
-    
-    distance = 3200 * (distance / 138.0);
-    if (distance == 0)
-      return;
+  int distance = abs(targetPos.x - nowPos.x);
+  //if (distance > 5) distance -= 5;
 
-    if (targetPos.x > nowPos.x)
-    {
-      digitalWrite(DIRPIN, FORWARD);
-      digitalWrite(DIRPIN2, FORWARD2);
-    }
-    else
-    {
-      digitalWrite(DIRPIN, !FORWARD);
-      digitalWrite(DIRPIN2, !FORWARD2);
-    }
+  distance = stepsperone * (distance / len);
+  if (distance == 0)
+    return;
 
-    int razgonDist = distance / 1.2;
+  if (targetPos.x > nowPos.x) {
+    digitalWrite(DIRPIN, FORWARD);
+    digitalWrite(DIRPIN2, FORWARD2);
+  } else {
+    digitalWrite(DIRPIN, !FORWARD);
+    digitalWrite(DIRPIN2, !FORWARD2);
+  }
 
-    timestep = 2000;
-    stepsGo = 0;
+  int razgonDist = distance / 1.2;
 
-    int minTimeStep = 1000000 / maxSpeed;
-    if (minTimeStep < 100)
-      minTimeStep = 100;
+  timestep = 800;
+  stepsGo = 0;
 
-    if (distance < 20) {
-      razgonDist = 0;
-      timestep = minTimeStep;
-    }
+  int minTimeStep = 1000000 / maxSpeed;
+  if (minTimeStep < 100)
+    minTimeStep = 100;
 
-    while (stepsGo < distance) {
-      digitalWrite(STEPPIN, HIGH);
-      digitalWrite(STEPPIN2, HIGH);
-      delayMicroseconds(timestep);
-      digitalWrite(STEPPIN, LOW);
-      digitalWrite(STEPPIN2, LOW);
-      delayMicroseconds(timestep);
+  if (distance < 20) {
+    razgonDist = 0;
+    timestep = minTimeStep;
+  }
 
+  while (stepsGo < distance) {
+    encodercount = enc.getEnc();
+
+    digitalWrite(STEPPIN, HIGH);
+    digitalWrite(STEPPIN2, HIGH);
+    delayMicroseconds(timestep);
+    digitalWrite(STEPPIN, LOW);
+    digitalWrite(STEPPIN2, LOW);
+    delayMicroseconds(timestep);
+
+    Serial.println(encodercount);
+    //if (encodercount > 0)
       stepsGo++;
 
-      if (razgonDist > 0) {
-        if (stepsGo < razgonDist && timestep > minTimeStep) {
-          timestep -= acceleration;
-          if (timestep < minTimeStep)
-            timestep = minTimeStep;
-        } else if (stepsGo >= (distance - razgonDist) && timestep < 2000) {
-          timestep += acceleration;
-        }
+    if (razgonDist > 0) {
+      if (stepsGo < razgonDist && timestep > minTimeStep) {
+        timestep -= acceleration;
+        if (timestep < minTimeStep)
+          timestep = minTimeStep;
+      } else if (stepsGo >= (distance - razgonDist) && timestep < 2000) {
+        timestep += acceleration;
       }
     }
-
-    nowPos = targetPos;
-  }
-  void Motor::setStart(Point set) {
-    nowPos = set;
   }
 
-  void Motor::StepperInit() {
-    pinMode(DIRPIN, OUTPUT);
-    pinMode(STEPPIN, OUTPUT);
-    pinMode(DIRPIN2, OUTPUT);
-    pinMode(STEPPIN2, OUTPUT);
-  }
+  nowPos = targetPos;
+}
+void Motor::setStart(Point set) {
+  nowPos = set;
+}
 
-  Point Motor::getPos() {
-    return nowPos;
-  }
+void Motor::StepperInit() {
+  enc.encinit();
+
+  pinMode(DIRPIN, OUTPUT);
+  pinMode(STEPPIN, OUTPUT);
+  pinMode(DIRPIN2, OUTPUT);
+  pinMode(STEPPIN2, OUTPUT);
+}
+
+Point Motor::getPos() {
+  return nowPos;
+}
