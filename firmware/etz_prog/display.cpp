@@ -8,9 +8,7 @@ void OLEDMenu::init() {
   display->begin(SSD1306_SWITCHCAPVCC);
   display->clearDisplay();
 
-  showText("robot redy");
-  delay(1000);
-  showMenu();
+  drawcar();
 }
 
 void OLEDMenu::update() {
@@ -111,9 +109,8 @@ void OLEDMenu::calibr_sens() {
   delay(500);
 }
 
-void OLEDMenu::sensorsdisp()
-{
-   display->clearDisplay();
+void OLEDMenu::sensorsdisp() {
+  display->clearDisplay();
   display->setTextSize(1);
   display->setCursor(0, 20);
   display->print("left: ");
@@ -122,4 +119,16 @@ void OLEDMenu::sensorsdisp()
   display->println(EEPROM.read(3) * 4);
   display->display();
   delay(500);
+}
+
+void OLEDMenu::drawcar() {
+  display->clearDisplay();
+  
+
+  display->fillRoundRect(20, 25, 88, 20, 5, WHITE);  
+  display->fillTriangle(50, 25, 70, 15, 120, 25, WHITE); 
+  display->fillCircle(35, 45, 8, WHITE);  
+  display->fillCircle(93, 45, 8, WHITE); 
+  
+  display->display();
 }

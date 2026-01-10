@@ -181,11 +181,12 @@ public:
   void setLastTime(uint64_t timer);
   void calibr_sens();
   void sensorsdisp();
+  void drawcar();
 
 private:
   Adafruit_SSD1306 *display;
   int upBtn, downBtn, selectBtn;
-  int selected;
+  int selected = 0;
   int modeSelected = -1;
   uint64_t lastTime;
   String *modes;

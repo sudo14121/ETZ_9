@@ -24,8 +24,8 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
   stepsGo = 0;
 
   int minTimeStep = 1000000 / maxSpeed;
-  if (minTimeStep < 100)
-    minTimeStep = 100;
+  if (minTimeStep < 20)
+    minTimeStep = 120;
 
   if (distance < 20) {
     razgonDist = 0;
