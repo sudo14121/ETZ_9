@@ -114,7 +114,6 @@ private:
 
 TASKS tasks;
 
-///////////////////////СЕВТОДИОДЫ
 void setup() {
   Serial.begin(115200);
 
