@@ -64,7 +64,7 @@ public:
   }
 
   void second() {
-
+ robot.goingStartPos(5000);
     menu.showMenu();
     menu.setLastTime(millis());
   }
@@ -114,8 +114,8 @@ private:
 
 TASKS tasks;
 
+///////////////////////СЕВТОДИОДЫ
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(115200);
 
   robot.initDrive();

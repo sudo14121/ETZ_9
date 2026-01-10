@@ -62,18 +62,19 @@ void Paint::goingStartPos(int speed) {
     motors.goToPoint({ motors.getPos().x + plus, 0 }, speed);
     sens.newpos();
   }
-
-  while (sens.ishereblack()) {
+  motors.setStart({0, 0 });
+  motors.goToPoint({20, 0}, 2000);
+  /*while (sens.ishereblack()) {
     motors.goToPoint({ motors.getPos().x + plus, 0 }, speed);
     sens.newpos();
-  }
+  }*/
   if (plus == 1)
     motors.setStart({ -need, 0 });
 }
 
 void Paint::backzone(int speed) {
   goingStartPos(speed);
-  motors.goToPoint({ -need - 70, 0 }, speed);
+  motors.goToPoint({ -need - 40, 0 }, speed);
 }
 
 void Paint::calibr() {
