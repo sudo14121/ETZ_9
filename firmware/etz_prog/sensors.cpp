@@ -4,11 +4,12 @@ void Sensors::initSensors() {
   pinMode(pinLeft, INPUT);
   pinMode(pinRight, INPUT);
 }
-void Sensors::calibr() {
-  digitalWrite(LedPin, 1);
+void Sensors::calibr(Motor& c) {
+  digitalWrite(34, 1);
   uint64_t timerCalibr = millis();
   int wl = 1023, wr = 1023, bl = 0, br = 0;
-  while (millis() - timerCalibr < 5000) {
+  while (c.getPos().x < 150) {
+    c.goToPoint({ c.getPos().x + 1, 0 }, 2500);
     int leftS = analogRead(pinLeft);
     int rightS = analogRead(pinRight);
     if (leftS > bl)
@@ -20,16 +21,16 @@ void Sensors::calibr() {
     if (rightS < wr)
       wr = rightS;
   }
-  digitalWrite(LedPin, 0);
+  digitalWrite(34, 0);
   delay(200);
-  digitalWrite(LedPin, 1);
-  delay(10000);
+  digitalWrite(34, 1);
+  while(digitalRead(26));
   EEPROM.write(0, ((wl + bl) / 2) / 4);
   EEPROM.write(1, ((wr + br) / 2) / 4);
-  digitalWrite(LedPin, 0);
+  digitalWrite(34, 0);
 }
 bool Sensors::ishereblack() {
-  if (analogRead(pinLeft) > isblackLeft && analogRead(pinRight) > isblackRight) {
+  if (analogRead(pinLeft) > isblackLeft) {
     return 1;
   }
   return 0;
