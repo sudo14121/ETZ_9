@@ -32,6 +32,7 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
   }
 
   while (stepsGo < distance) {
+    disp->pause();
     encodercount = enc.getEnc();
 
     digitalWrite(STEPPIN, HIGH);
@@ -43,7 +44,7 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
 
     Serial.println(encodercount);
     //if (encodercount > 0)
-      stepsGo++;
+    stepsGo++;
 
     if (razgonDist > 0) {
       if (stepsGo < razgonDist && timestep > minTimeStep) {
