@@ -13,13 +13,32 @@
 #define DOPA2 A3
 #define DOPA3 A5
 
+int x = 0, y = 0;
+bool one = 0;
+
 //#define CALIBR
 CRGB leds[3];
-String codes[TASKS_COUNT] = { "five lines", "morze sos", "239 morze", "four", "five", "six", "seven", "eight", "nine", "ten", "calibr", "down", "up" };
+String codes[TASKS_COUNT] = { "1", "2", "3", "4", "five", "six", "seven", "eight", "nine", "ten", "calibr", "down", "up" };
 OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 OLEDMenu& ptr = menu;
 OLEDMenu* ukazatel = &ptr;
 Paint robot(28, 35, 37, { 0, 0 }, 119, ukazatel);
+
+void check_x() {
+  static bool last_state = 0;
+  uint64_t timer = millis();
+  bool current_state = digitalRead(18);
+  while (millis() - timer < 2000) {
+    current_state = digitalRead(18);
+    if (current_state == 1 && last_state == 0) {
+      delay(10);
+      x++;
+      timer = millis();
+    }
+    last_state = current_state;
+  }
+  x -= 1;
+}
 
 class TASKS {
 public:
@@ -27,12 +46,8 @@ public:
   }
   void doing(int mode) {
     if (mode != -1) {
-      if (mode != 10 and mode != 11 and mode != 12)
-        robot.goingStartPos(5000);
       switch (mode) {
         case 0:
-          FastLED.showColor(CRGB::GREEN);
-          FastLED.show();
           first();
           break;
         case 1:
@@ -72,8 +87,6 @@ public:
           up();
           break;
       }
-      if (mode != 10 and mode != 11 and mode != 12)
-        robot.backzone(5000);
 
       menu.showMenu();
       menu.setLastTime(millis());
@@ -82,29 +95,58 @@ public:
 
   void first() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
-    robot.drawLine({ 30, 0 }, { 32, 0 }, 5000);
-    robot.drawLine({ 32 + 5 + 2, 0 }, { 38 + 7 + 1, 0 }, 5000);
-    robot.drawLine({ 38 + 7 + 9 + 2 + 1, 0 }, { 38 + 7 + 9 + 11 + 1, 0 }, 5000);
-    robot.drawLine({ 38 + 7 + 9 + 11 + 13 + 2 + 1, 0 }, { 38 + 7 + 9 + 11 + 13 + 15 + 1, 0 }, 5000);
-    robot.drawLine({ 38 + 7 + 9 + 11 + 13 + 15 + 17 + 2 + 1, 0 }, { 38 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 1, 0 }, 5000);
+    delay(1200);
+    digitalWrite(33, 1);
+
+    robot.goingStartPos(5000);
+    robot.drawDot({ 13, 0 }, 5000);
+    robot.drawLine({ 35, 0 }, { 63, 0 }, 5000);
+    robot.backzone(5000);
+
+    digitalWrite(33, 0);
   }
 
   void second() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
-    robot.drawMorze('С', { 20, 0 }, 12, 6, 2000);
-    robot.drawMorze('О', { 58, 0 }, 12, 6, 2000);
-    robot.drawMorze('С', { 118, 0 }, 12, 6, 2000);
+    digitalWrite(33, 1);
+
+    check_x();
+    menu.showText(String(x));
+    digitalWrite(33, 0);
+
+    robot.goingStartPos(5000);
+    robot.drawMorze(x, { 75, 0 }, 8, 1.5, 6, 2000);
+
+    robot.backzone(5000);
   }
 
   void third() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
-    robot.drawMorze('2', { 20, 0 }, 6, 4, 2000);
-    robot.drawMorze('3', { 66, 0 }, 6, 4, 2000);
-    robot.drawMorze('9', { 98, 0 }, 6, 4, 2000);
+    delay(1200);
+    digitalWrite(33, 1);
+
+    robot.goingStartPos(5000);
+
+    if (!one)
+      robot.goingFirst(2000);
+    else{
+      robot.drawDot({220, 0}, 2000);
+    }
+    robot.backzone(5000);
+    digitalWrite(33, 0);
   }
 
   void fourth() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
+    delay(1200);
+    digitalWrite(33, 1);
+
+    robot.goingStartPos(5000);
+
+    robot.goingSecond(2000);
+
+    robot.backzone(5000);
+    digitalWrite(33, 0);
   }
 
   void fifth() {
@@ -151,7 +193,8 @@ TASKS tasks;
 
 void setup() {
   Serial.begin(115200);
-  FastLED.addLeds<WS2812, 46, GRB>(leds, 3);
+
+  FastLED.addLeds<WS2812, DOPD3, GRB>(leds, 3);
   FastLED.clear();
   FastLED.setBrightness(150);
 
@@ -162,15 +205,39 @@ void setup() {
 
   pinMode(ANALOG, INPUT);
   pinMode(DIGIT, INPUT_PULLUP);
+
+  pinMode(DOPD2, OUTPUT);
 }
 
 void loop() {
-  FastLED.showColor(CRGB::Orange);
+  if (menu.getSelectedByLED() == 0)
+    FastLED.showColor(CRGB::Red);
+  else if (menu.getSelectedByLED() == 1)
+    FastLED.showColor(CRGB::Orange);
+  else if (menu.getSelectedByLED() == 2)
+    FastLED.showColor(CRGB::Green);
+  else if (menu.getSelectedByLED() == 3)
+    FastLED.showColor(CRGB::Yellow);
+  else if (menu.getSelectedByLED() == 4)
+    FastLED.showColor(CRGB::Purple);
+  else if (menu.getSelectedByLED() == 5)
+    FastLED.showColor(CRGB::Blue);
+  else if (menu.getSelectedByLED() == 6)
+    FastLED.showColor(CRGB::Pink);
+  else if (menu.getSelectedByLED() == 7)
+    FastLED.showColor(CRGB::DeepPink);
+  else if (menu.getSelectedByLED() == 8)
+    FastLED.showColor(CRGB::Brown);
+  else if (menu.getSelectedByLED() == 9)
+    FastLED.showColor(CRGB::Gray);
   FastLED.show();
-  digitalWrite(33, 1);
+
+  if (!digitalRead(18) && !one) one = 1;
+
   menu.update();
   int temp = menu.getSelected();
   tasks.doing(temp);
   Serial.println(digitalRead(DIGIT));
+  Serial.println(one);
   Serial.println(analogRead(ANALOG));
 }

@@ -3,7 +3,9 @@
 #include <EEPROM.h>
 
 #include <Servo.h>
+
 #include<FastLED.h> 
+
 #include <SPI.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -41,6 +43,7 @@ public:
   void init();
   void update();
   int getSelected();
+  int getSelectedByLED();
   void showText(String text);
   void showMenu();
   void setLastTime(uint64_t timer);
@@ -112,9 +115,9 @@ public:
 private:
   encoder enc;
   const char* name;
-  Point targetPos;
+  Point targetPos = {0, 0};
   Point nowPos;
-  int stepsGo;
+  int stepsGo = 0;
   int STEPPIN, STEPPIN2;
   int DIRPIN, DIRPIN2;
   int timestep = 2000;
@@ -174,13 +177,15 @@ public:
   void backzone(int speed);
   void calibr();
   void testsens();
-  void drawMorze(char letter, Point start_pos, float lenLine, float lenBetween, float speed);
+  void drawMorze(int letter, Point start_pos, float lenLine, float lendot, float lenBetween, float speed);
+  void goingFirst(int speed);
+  void goingSecond(int speed);
 
 private:
   int STEP, DIR;
   int SERVO;
   Servo brush;
-  int downPos = 116;
+  int downPos = 80;
   int upPos = 145;
   Point start = { 0, 0 };
   Point now_position = { 0, 0 };

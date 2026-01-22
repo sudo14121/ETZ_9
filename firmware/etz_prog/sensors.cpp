@@ -6,7 +6,6 @@ void Sensors::initSensors() {
 }
 void Sensors::calibr(Motor& c) {
   digitalWrite(34, 1);
-  uint64_t timerCalibr = millis();
   int wl = 1023, wr = 1023, bl = 0, br = 0;
   while (c.getPos().x < 150) {
     c.goToPoint({ c.getPos().x + 1, 0 }, 2500);
