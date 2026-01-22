@@ -46,6 +46,10 @@ int OLEDMenu::getSelected() {
   return temp;
 }
 
+int OLEDMenu::getSelectedByLED() {;
+  return selected;
+}
+
 void OLEDMenu::setLastTime(uint64_t timer) {
   lastTime = timer;
 }
