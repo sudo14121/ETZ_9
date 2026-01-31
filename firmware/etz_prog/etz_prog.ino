@@ -24,6 +24,12 @@ OLEDMenu& ptr = menu;
 OLEDMenu* ukazatel = &ptr;
 Paint robot(28, 35, 37, { 0, 0 }, 119, ukazatel);
 
+///////////////ввод морзе кнопочкой///////////
+int lDot = 10000, lLine = 3 * lDot, lTime = lDot;
+#define N 10
+int times[N * 2 - 1] = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+String input_OPA[N * 2 - 1] = { "", "", "", "", "", "", "", "", "" };
+
 void check_x() {
   static bool last_state = 0;
   uint64_t timer = millis();
@@ -129,8 +135,8 @@ public:
 
     if (!one)
       robot.goingFirst(2000);
-    else{
-      robot.drawDot({220, 0}, 2000);
+    else {
+      robot.drawDot({ 220, 0 }, 2000);
     }
     robot.backzone(5000);
     digitalWrite(33, 0);
@@ -206,10 +212,16 @@ void setup() {
   pinMode(ANALOG, INPUT);
   pinMode(DIGIT, INPUT_PULLUP);
 
-  pinMode(DOPD2, OUTPUT);
+  pinMode(DOPD3, OUTPUT);
+
+  input_morze();
+  for (int j = 0; j < (2 * N - 1); j++) {
+    Serial.print(input_OPA[j]);
+  }
 }
 
 void loop() {
+  /*
   if (menu.getSelectedByLED() == 0)
     FastLED.showColor(CRGB::Red);
   else if (menu.getSelectedByLED() == 1)
@@ -236,8 +248,9 @@ void loop() {
 
   menu.update();
   int temp = menu.getSelected();
-  tasks.doing(temp);
+  //tasks.doing(temp);
   Serial.println(digitalRead(DIGIT));
   Serial.println(one);
   Serial.println(analogRead(ANALOG));
+  */
 }
