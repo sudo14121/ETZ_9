@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : D:\alletz\schematic\ETZZ.PcbDoc
-Date     : 04.02.2026
-Time     : 22:18:57
+Date     : 08.02.2026
+Time     : 22:18:22
 
 Processing Rule : Clearance Constraint (Gap=0.125mm) (OnTopLayer OR OnBottomLayer),(All)
 Rule Violations :0
