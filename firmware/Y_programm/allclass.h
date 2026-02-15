@@ -115,7 +115,7 @@ public:
   Point getPos();
 
 private:
-  encoder enc;
+  //encoder enc;
   const char* name;
   Point targetPos = {0, 0};
   Point nowPos;
@@ -183,13 +183,14 @@ public:
   void drawMorze(int letter, Point start_pos, float lenLine, float lendot, float lenBetween, float speed);
   void goingFirst(int speed);
   void goingSecond(int speed);
+  void goToPoint(Point point, int speed);
 
 private:
   int STEP, DIR;
   int SERVO;
   Servo brush;
-  int downPos = 80;
-  int upPos = 145;
+  int downPos = 0;
+  int upPos = 50;
   Point start = { 0, 0 };
   Point now_position = { 0, 0 };
   int need = 0;

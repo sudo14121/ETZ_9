@@ -29,6 +29,11 @@ void Paint::upBrush() {
   delay(500);
 }
 
+void Paint::goToPoint(Point point, int speed) {
+  now_position = motors.getPos();
+  motors.goToPoint(point, speed);
+}
+
 void Paint::drawLine(Point start, Point finish, int speed) {
   now_position = motors.getPos();
   if (start.x < now_position.x) {
@@ -189,7 +194,7 @@ void Paint::drawMorze(int letter, Point start_pos, float lenLine, float lendot, 
   const char* code = "";
 
   switch (letter) {
-    
+
     case 10: code = "-----"; break;
     case 1: code = ".----"; break;
     case 2: code = "..---"; break;
@@ -199,8 +204,10 @@ void Paint::drawMorze(int letter, Point start_pos, float lenLine, float lendot, 
     case 6: code = "-...."; break;
     case 7: code = "--..."; break;
     case 8: code = "---.."; break;
-    case 9: code = "----."; break;
-    /*
+    case 9:
+      code = "----.";
+      break;
+      /*
     case 'A': code = ".-"; break;
     case 'B': code = "-..."; break;
     case 'C': code = "-.-."; break;

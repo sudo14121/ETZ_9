@@ -7,9 +7,12 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
   int ydist = abs(targetPos.y - nowPos.y);
 
   distance = stepsperone * (distance / len);
-  ydist = stepsperone * (distance / (2 * PI * 9.7));
+  ydist = stepsperone * (ydist / (12.15 * PI));
+  //ydist /= 0.75;
 
-  if (distance == 0)
+  Serial.println(ydist);
+
+  if (distance == 0 && ydist == 0)
     return;
 
   if (targetPos.x > nowPos.x) {
@@ -42,13 +45,15 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
     timestep = minTimeStep;
   }
 
-  if (ydist < 20) {
-    timestepY = minTimeStep;
+  float yPerX = 0;
+  if (distance > 0) {
+    yPerX = (float)ydist / distance;
   }
+  float yProgress = 0;
 
   while (stepsGo < distance) {
     disp->pause();
-    encodercount = enc.getEnc();
+    //encodercount = enc.getEnc();
 
     digitalWrite(STEPPIN, HIGH);
     digitalWrite(STEPPIN2, HIGH);
@@ -57,15 +62,17 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
     digitalWrite(STEPPIN2, LOW);
     delayMicroseconds(timestep);
 
-    Serial.println(encodercount);
+    //Serial.println(encodercount);
     //if (encodercount > 0)
     stepsGo++;
+    yProgress += yPerX;
 
-    if (stepsGoY < ydist) {
+    while (yProgress >= 1 && stepsGoY < ydist) {
       digitalWrite(STEPPIN3, HIGH);
       delayMicroseconds(timestepY);
       digitalWrite(STEPPIN3, LOW);
-      stepsGoY ++;
+      stepsGoY++;
+      yProgress--;
     }
 
     if (razgonDist > 0) {
@@ -92,7 +99,7 @@ void Motor::setStart(Point set) {
 }
 
 void Motor::StepperInit() {
-  enc.encinit();
+  //enc.encinit();
 
   pinMode(DIRPIN, OUTPUT);
   pinMode(STEPPIN, OUTPUT);

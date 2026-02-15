@@ -157,6 +157,7 @@ public:
 
   void fifth() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
+    robot.goToPoint({100, 100}, 2000);
   }
 
   void sixth() {
@@ -214,14 +215,14 @@ void setup() {
 
   pinMode(DOPD3, OUTPUT);
 
-  input_morze();
+  /*input_morze();
   for (int j = 0; j < (2 * N - 1); j++) {
     Serial.print(input_OPA[j]);
-  }
+  }*/
 }
 
 void loop() {
-  /*
+  
   if (menu.getSelectedByLED() == 0)
     FastLED.showColor(CRGB::Red);
   else if (menu.getSelectedByLED() == 1)
@@ -248,9 +249,9 @@ void loop() {
 
   menu.update();
   int temp = menu.getSelected();
-  //tasks.doing(temp);
-  Serial.println(digitalRead(DIGIT));
-  Serial.println(one);
-  Serial.println(analogRead(ANALOG));
-  */
+  tasks.doing(temp);
+  //Serial.println(digitalRead(DIGIT));
+  //Serial.println(one);
+  //Serial.println(analogRead(ANALOG));
+  
 }
