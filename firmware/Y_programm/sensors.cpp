@@ -1,8 +1,10 @@
+#include "Arduino.h"
 #include "allclass.h"
 
 void Sensors::initSensors() {
   pinMode(pinLeft, INPUT);
   pinMode(pinRight, INPUT);
+  pinMode(pinEnd, INPUT_PULLUP);
 }
 void Sensors::calibr(Motor& c) {
   digitalWrite(34, 1);
@@ -28,6 +30,18 @@ void Sensors::calibr(Motor& c) {
   EEPROM.write(1, ((wr + br) / 2) / 4);
   digitalWrite(34, 0);
 }
+
+void Sensors::yCalibr(Motor& c) {
+  digitalWrite(34, 1);
+  int xpos = c.getPos().x;
+  while (digitalRead(pinEnd)) {
+    c.goToPoint({xpos, c.getPos().y - 1 }, 3000);
+  }
+  digitalWrite(34, 0);
+  delay(200);
+  digitalWrite(34, 1);
+}
+
 bool Sensors::ishereblack() {
   if (analogRead(pinLeft) > isblackLeft) {
     return 1;

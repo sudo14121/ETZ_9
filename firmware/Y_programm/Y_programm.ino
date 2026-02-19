@@ -22,7 +22,7 @@ String codes[TASKS_COUNT] = { "1", "2", "3", "4", "five", "six", "seven", "eight
 OLEDMenu menu(29, 27, 26, TASKS_COUNT, codes);
 OLEDMenu& ptr = menu;
 OLEDMenu* ukazatel = &ptr;
-Paint robot(28, 35, 37, { 0, 0 }, 119, ukazatel);
+Paint robot(28, 35, 37, { 0, 0 }, -5, ukazatel);
 
 ///////////////ввод морзе кнопочкой///////////
 int lDot = 10000, lLine = 3 * lDot, lTime = lDot;
@@ -157,11 +157,22 @@ public:
 
   void fifth() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
+    robot.goingStartPos(5000);
+    robot.yCalibration();
+
     robot.goToPoint({100, 100}, 2000);
+
+    robot.goToPoint({0, 10}, 2000);
   }
 
   void sixth() {
     ///////////////УЧИТЫВАТЬ ТОЛЩИНУ ПЕРА!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!///////////////////
+    //robot.goingStartPos(5000);
+    robot.yCalibration();
+    
+    //robot.drawCircle({100, 100}, 10, 2000);
+    //robot.drawMnogo({95, 100}, 6, 4);
+    robot.drawLine({0, 0}, {100, 100});
   }
 
   void seventh() {
@@ -201,9 +212,9 @@ TASKS tasks;
 void setup() {
   Serial.begin(115200);
 
-  FastLED.addLeds<WS2812, DOPD3, GRB>(leds, 3);
+  /*FastLED.addLeds<WS2812, DOPD3, GRB>(leds, 3);
   FastLED.clear();
-  FastLED.setBrightness(150);
+  FastLED.setBrightness(150);*/
 
   robot.initDrive();
   robot.initSens();
@@ -213,7 +224,7 @@ void setup() {
   pinMode(ANALOG, INPUT);
   pinMode(DIGIT, INPUT_PULLUP);
 
-  pinMode(DOPD3, OUTPUT);
+  //pinMode(DOPD3, OUTPUT);
 
   /*input_morze();
   for (int j = 0; j < (2 * N - 1); j++) {
@@ -223,7 +234,7 @@ void setup() {
 
 void loop() {
   
-  if (menu.getSelectedByLED() == 0)
+  /*if (menu.getSelectedByLED() == 0)
     FastLED.showColor(CRGB::Red);
   else if (menu.getSelectedByLED() == 1)
     FastLED.showColor(CRGB::Orange);
@@ -243,14 +254,14 @@ void loop() {
     FastLED.showColor(CRGB::Brown);
   else if (menu.getSelectedByLED() == 9)
     FastLED.showColor(CRGB::Gray);
-  FastLED.show();
+  FastLED.show();*/
 
   if (!digitalRead(18) && !one) one = 1;
 
   menu.update();
   int temp = menu.getSelected();
   tasks.doing(temp);
-  //Serial.println(digitalRead(DIGIT));
+  Serial.println(digitalRead(46));
   //Serial.println(one);
   //Serial.println(analogRead(ANALOG));
   

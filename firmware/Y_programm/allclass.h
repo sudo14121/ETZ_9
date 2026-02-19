@@ -4,7 +4,7 @@
 
 #include <Servo.h>
 
-#include<FastLED.h> 
+#include <FastLED.h>
 
 #include <SPI.h>
 #include <Adafruit_GFX.h>
@@ -109,7 +109,7 @@ public:
     FORWARD2 = forward2;
     disp = display;
   }
-  void goToPoint(Point pos, int maxSpeed);
+  void goToPoint(Point pos, int maxSpeed = 3000);
   void setStart(Point set);
   void StepperInit();
   Point getPos();
@@ -117,7 +117,7 @@ public:
 private:
   //encoder enc;
   const char* name;
-  Point targetPos = {0, 0};
+  Point targetPos = { 0, 0 };
   Point nowPos;
   int stepsGo = 0;
   int STEPPIN, STEPPIN2, STEPPIN3;
@@ -145,12 +145,14 @@ public:
     pinRight = sensor2;
   }
   void initSensors();
+  void yCalibr(Motor& c);
   void calibr(Motor& c);
   bool ishereblack();
   void newpos();
 
 private:
   int pinLeft, pinRight;
+  int pinEnd = 46;
   int LedPin = 33;
   int isblackLeft = EEPROM.read(0) * 4;
   int isblackRight = EEPROM.read(1) * 4;
@@ -172,19 +174,26 @@ public:
   void initSens();
   void downBrush();
   void upBrush();
-  void drawLine(Point start, Point finish, int speed);
-  void drawDot(Point pos, int speed);
-  void drawLines(Point pos1, int lenLine, int lenBetweenLines, int countLines, int speed);
-  void drawDots(Point pos, int lenBetweenDots, int countDots, int speed);
-  void goingStartPos(int speed);
-  void backzone(int speed);
+  void drawLine(Point start, Point finish, int speed = 3000);
+  void drawDot(Point pos, int speed = 3000);
+  void drawLines(Point pos1, int lenLine, int lenBetweenLines, int countLines, int speed = 3000);
+  void drawDots(Point pos, int lenBetweenDots, int countDots, int speed = 3000);
+  void goingStartPos(int speed = 3000);
+  void backzone(int speed = 3000);
   void calibr();
   void testsens();
-  void drawMorze(int letter, Point start_pos, float lenLine, float lendot, float lenBetween, float speed);
-  void goingFirst(int speed);
-  void goingSecond(int speed);
-  void goToPoint(Point point, int speed);
-
+  void drawMorze(int letter, Point start_pos, float lenLine, float lendot, float lenBetween, float speed = 3000);
+  void goingFirst(int speed = 3000);
+  void goingSecond(int speed = 3000);
+  void goToPoint(Point point, int speed = 3000);
+  void yCalibration();
+  void drawCircle(Point centre, int radius, int speed = 3000);
+  void drawCircleAng(Point centre, int radius, double startAngle, double angleDegrees, int speed = 3000);
+  void drawMnogo(Point centre, int sides, int lengh, int speed = 3000);
+  void drawTriangle(Point p1, Point p2, Point p3, int speed = 3000);
+  void drawRectangle(Point start, int weight, int height, int speed = 3000);
+  void drawStar(Point centre, int radius, int points, int speed);
+  
 private:
   int STEP, DIR;
   int SERVO;

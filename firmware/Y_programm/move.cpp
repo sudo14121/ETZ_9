@@ -32,7 +32,7 @@ void Motor::goToPoint(Point pos, int maxSpeed) {
   int razgonDist = distance / 1.2;
 
   timestep = 800;
-  int timestepY = 250;
+  int timestepY = 1000000 / maxSpeed;
   stepsGo = 0;
   int stepsGoY = 0;
 

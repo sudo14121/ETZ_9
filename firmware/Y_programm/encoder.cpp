@@ -1,7 +1,6 @@
 #include "allclass.h"
 
-void encoder::encinit()
-{
+void encoder::encinit(){
     Wire.begin();
 
     if (!enc.begin())
@@ -13,8 +12,7 @@ void encoder::encinit()
     enc.setDirection(AS5600_CLOCK_WISE);
 }
 
-bool encoder::count_enc()
-{
+bool encoder::count_enc(){
     encold = encnow;
     encnow = enc.readAngle();
     if (abs(encold - encnow) >= 1)
@@ -25,15 +23,13 @@ bool encoder::count_enc()
     return 0;
 }
 
-int32_t encoder::getEnc()
-{
+int32_t encoder::getEnc(){
     encold = encnow;
     encnow = enc.readAngle();
     return abs(encnow - encold);
 }
 
-void encoder::setEnc(int angle)
-{
+void encoder::setEnc(int angle){
     encnow = angle;
     encold = angle;
 }
