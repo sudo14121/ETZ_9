@@ -21,7 +21,7 @@ TargetOutputMedium=Производство
 VariantName=[No Variations]
 VariantScope=1
 CurrentConfigurationName=
-TargetPrinter=Microsoft Print to PDF
+TargetPrinter=HP17950E (HP Smart Tank 510 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputMedium1=Print Job
 OutputMedium1_Type=Printer
@@ -80,7 +80,7 @@ OutputEnabled2_OutputMedium4=0
 OutputEnabled2_OutputMedium5=0
 OutputDefault2=0
 Configuration2_Name1=OutputConfigurationParameter1
-Configuration2_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=3|NumberOfDecimals=3|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973834~1,16777217~1,16777222~1,16777218~1,16777219~1,16777220~1,16777221~1,16777223~1,16842751~1,16973835~1,16973831~1,16908289~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=F:\GIT\FootBot 3\schematic\robot\BLDC_DRIVER_R3\BLDC_DRIVER_R3.PcbDoc
+Configuration2_Item1=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|BoardID=RWSXWBDS|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set= |LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=3|NumberOfDecimals=3|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|OutputFormat=Different|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973834~1,16777217~1,16777220~1,16842751~1,16973835~1,16973831~1,16908289~1|PlotBoardProfile=False|PlotBoardProfileFileName= |PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=False|PlotUsedDrillGuideLayerPairs=False|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|UncheckPlotDrillDrawingLayerPair0_Backdrill=False|UncheckPlotDrillDrawingLayerPair0_Checked=False|UncheckPlotDrillDrawingLayerPair0_DrillType=Regular|UncheckPlotDrillDrawingLayerPair0_FileName= |UncheckPlotDrillDrawingLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillDrawingLayerPair0_LowLayer=Top Layer|UncheckPlotDrillGuideLayerPair0_Backdrill=False|UncheckPlotDrillGuideLayerPair0_Checked=False|UncheckPlotDrillGuideLayerPair0_DrillType=Regular|UncheckPlotDrillGuideLayerPair0_FileName= |UncheckPlotDrillGuideLayerPair0_HighLayer=Bottom Layer|UncheckPlotDrillGuideLayerPair0_LowLayer=Top Layer|DocumentPath=D:\alletz\schematic\ETZZ.PcbDoc
 OutputType3=NC Drill
 OutputName3=Сверловка
 OutputCategory3=Fabrication
@@ -94,7 +94,7 @@ OutputEnabled3_OutputMedium4=0
 OutputEnabled3_OutputMedium5=0
 OutputDefault3=0
 Configuration3_Name1=OutputConfigurationParameter1
-Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=3|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=D:\GIT\reset_dvr\schematic\com_mod\com_mod.PcbDoc
+Configuration3_Item1=BoardEdgeRoutToolDia=2000000|GenerateBoardEdgeRout=False|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=False|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|GenerateToolsByDrillSymbols=False|NumberOfDecimals=3|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=SuppressTrailingZeroes|DocumentPath=D:\alletz\schematic\ETZZ.PcbDoc
 OutputType4=ExportSTEP
 OutputName4=Export STEP
 OutputCategory4=Export
@@ -297,7 +297,7 @@ ShowComponentParameters2=1
 GlobalBookmarks2=1
 PDFACompliance2=Disabled
 PDFVersion2=Default
-OutputFilePath3=C:\Users\FRZNMN\Documents\РАБОТА\MZCAT_2024_boards\MZCAT_motherboard_RPI\OUTPUT\ContainerName_[MZCAT_motherboard_RPI]_2025-03-30\
+OutputFilePath3=D:\alletz\schematic\OUTPUT\ContainerName_[ETZ]_2026-02-20\
 ReleaseManaged3=0
 OutputBasePath3=OUTPUT\
 OutputPathMedia3==ContainerName+'_'+'['+ProjectName+']'+'_'+CurrentDate
@@ -340,7 +340,7 @@ OpenOutput5=1
 [GeneratedFilesSettings]
 RelativeOutputPath2=D:\GIT\reset_dvr\schematic\com_mod\OUTPUT\Документация_ТРЛЕ.Э41.99.26.00_Коммуникационный модуль\
 OpenOutputs2=0
-RelativeOutputPath3=C:\Users\FRZNMN\Documents\РАБОТА\MZCAT_2024_boards\MZCAT_motherboard_RPI\OUTPUT\ContainerName_[MZCAT_motherboard_RPI]_2025-03-30\
+RelativeOutputPath3=D:\alletz\schematic\OUTPUT\ContainerName_[ETZ]_2026-02-20\
 OpenOutputs3=0
 AddToProject3=0
 TimestampFolder3=0
